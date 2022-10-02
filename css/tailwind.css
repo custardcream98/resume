@@ -604,9 +604,6 @@ video {
 }
 
 .title-sec {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   font-size: 1.125rem;
   line-height: 1.75rem;
   font-weight: 600;
@@ -699,16 +696,20 @@ video {
   margin-left: 1.5rem;
 }
 
+.mt-7 {
+  margin-top: 1.75rem;
+}
+
 .mt-2 {
   margin-top: 0.5rem;
 }
 
-.block {
-  display: block;
+.mb-8 {
+  margin-bottom: 2rem;
 }
 
-.inline-block {
-  display: inline-block;
+.block {
+  display: block;
 }
 
 .flex {
@@ -751,6 +752,10 @@ video {
 
 .items-center {
   align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
 }
 
 .rounded-full {
@@ -903,6 +908,14 @@ video {
 
 .font-black {
   font-weight: 900;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.font-light {
+  font-weight: 300;
 }
 
 .leading-relaxed {

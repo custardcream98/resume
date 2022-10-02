@@ -43,26 +43,23 @@
           <h2 class="w-[170px] text-center text-xl font-bold text-darkgray1">
             Contact
           </h2>
-          <ul class="ml-5 flex-grow list-disc text-darkgray2">
-            <li class="my-1">
-              <span
-                class="after:relative after:top-[3px] after:mx-2 after:inline-block after:h-[15px] after:w-[2px] after:bg-darkgray2"
-                >Email</span
-              ><a href="#">likelion@example.com</a>
-            </li>
-            <li class="my-1">
-              <span
-                class="after:relative after:top-[3px] after:mx-2 after:inline-block after:h-[15px] after:w-[2px] after:bg-darkgray2"
-                >Github</span
-              ><a href="#">www.example.com</a>
-            </li>
-            <li class="my-1">
-              <span
-                class="after:relative after:top-[3px] after:mx-2 after:inline-block after:h-[15px] after:w-[2px] after:bg-darkgray2"
-                >Blog</span
-              ><a href="#">www.example.com</a>
-            </li>
-          </ul>
+          <address class="text-darkgray2">
+            <span
+              class="after:relative after:top-[3px] after:mx-2 after:inline-block after:h-[15px] after:w-[2px] after:bg-darkgray2"
+              >Email</span
+            >
+            <a href="mailto:likelion@example.com" target="_blank"
+              >likelion@example.com</a
+            ><br />
+            <span
+              class="after:relative after:top-[3px] after:mx-2 after:inline-block after:h-[15px] after:w-[2px] after:bg-darkgray2"
+              >Github</span
+            ><a href="#">www.example.com</a><br />
+            <span
+              class="after:relative after:top-[3px] after:mx-2 after:inline-block after:h-[15px] after:w-[2px] after:bg-darkgray2"
+              >Blog</span
+            ><a href="#">www.example.com</a>
+          </address>
         </section>
         <section class="section-main">
           <h2 class="title-pri">자기소개</h2>
@@ -77,11 +74,13 @@
           </p>
         </section>
         <section class="section-main">
-          <div>
-            <h2 class="title-pri inline-block">스택</h2>
-            <p class="inline-block text-sm">(진행한 프로젝트 수)</p>
-          </div>
-          <strong class="title-sec mt-5 mb-3">Frontend</strong>
+          <h2 class="title-pri">
+            스택
+            <span class="text-sm font-medium text-textgray"
+              >(진행한 프로젝트 수)</span
+            >
+          </h2>
+          <strong class="title-sec mt-5 mb-3 block">Frontend</strong>
           <ul class="stack-badge-list-wrapper">
             <li class="stack-badge bg-[#f0db4f40]">
               JavaScript
@@ -116,7 +115,7 @@
               <div class="alarm-badge">2</div>
             </li>
           </ul>
-          <strong class="title-sec mt-5 mb-3">Backend</strong>
+          <strong class="title-sec mt-5 mb-3 block">Backend</strong>
           <ul class="stack-badge-list-wrapper">
             <li class="stack-badge bg-[#092e2040] text-[#092e20]">
               Django
@@ -143,10 +142,10 @@
           <h2 class="title-pri">프로젝트</h2>
           <ul>
             <li class="my-10">
-              <strong class="title-sec mb-1">
-                1만 시간의 법칙
+              <div class="flex items-center justify-between">
+                <strong class="title-sec mb-1">1만 시간의 법칙</strong>
                 <time class="time" datetime="2022-09">2022.09</time>
-              </strong>
+              </div>
               <p class="mb-1 text-[0.95rem]">
                 <a
                   class="link relative ml-[20px] before:absolute before:top-[4px] before:left-[-18px] before:h-[17px] before:w-[17px] before:bg-[url('../img/icon-github.svg')]"
@@ -179,10 +178,10 @@
               </ul>
             </li>
             <li class="my-10">
-              <strong class="title-sec mb-1">
-                벤딩머신
+              <div class="flex items-center justify-between">
+                <strong class="title-sec mb-1">벤딩머신</strong>
                 <time class="time" datetime="2022-09">2022.09</time>
-              </strong>
+              </div>
               <p class="mb-1 text-[0.95rem]">
                 <a
                   class="link relative ml-[20px] before:absolute before:top-[4px] before:left-[-18px] before:h-[17px] before:w-[17px] before:bg-[url('../img/icon-github.svg')]"
@@ -216,10 +215,10 @@
               </ul>
             </li>
             <li class="my-10">
-              <strong class="title-sec mb-1">
-                웹 이력서
+              <div class="flex items-center justify-between">
+                <strong class="title-sec mb-1">웹 이력서</strong>
                 <time class="time" datetime="2022-10">2022.10</time>
-              </strong>
+              </div>
               <p class="mb-1 text-[0.95rem]">
                 <a
                   class="link relative ml-[20px] before:absolute before:top-[4px] before:left-[-18px] before:h-[17px] before:w-[17px] before:bg-[url('../img/icon-github.svg')]"
@@ -255,10 +254,10 @@
               </ul>
             </li>
             <li class="my-10">
-              <strong class="title-sec mb-1">
-                오픈마켓
+              <div class="flex items-center justify-between">
+                <strong class="title-sec mb-1">오픈마켓</strong>
                 <time class="time" datetime="2022-12">2022.12</time>
-              </strong>
+              </div>
               <p class="mb-1 text-[0.95rem]">
                 <a
                   class="link relative ml-[20px] before:absolute before:top-[4px] before:left-[-18px] before:h-[17px] before:w-[17px] before:bg-[url('../img/icon-github.svg')]"
@@ -296,14 +295,14 @@
           <h2 class="title-pri">이력</h2>
           <ul>
             <li class="my-10">
-              <strong class="title-sec mb-1"
-                >Project Manager
+              <div class="flex items-center justify-between">
+                <strong class="title-sec mb-1">Project Manager</strong>
                 <time
                   class="time after:mx-1 after:inline-block after:content-['~']"
                   datetime="2022-08"
                   >2022.08</time
-                ></strong
-              >
+                >
+              </div>
               <p class="mb-1 text-[0.95rem]">위니브</p>
               <strong class="mt-3 mb-1 block">업무</strong>
               <ul class="ml-6 list-disc">
@@ -324,16 +323,16 @@
               </ul>
             </li>
             <li class="my-10">
-              <strong class="title-sec mb-1"
-                >멋쟁이 사자 수강생
+              <div class="flex items-center justify-between">
+                <strong class="title-sec mb-1">멋쟁이 사자 수강생</strong>
                 <span class="time">
                   <time
                     class="after:mx-1 after:inline-block after:content-['~']"
                     datetime="2021-06"
                     >2021.06</time
                   ><time class="time" datetime="2022-07">2022.07</time></span
-                ></strong
-              >
+                >
+              </div>
               <p class="mb-1 text-[0.95rem]">멋사 FE스쿨 3기</p>
               <strong class="mt-3 mb-1 block">업무</strong>
               <ul class="ml-6 list-disc">
@@ -357,26 +356,81 @@
         </section>
         <section class="section-main">
           <h2 class="title-pri">기타</h2>
-          <strong class="title-sec mb-1">자격증</strong>
-          <ul>
-            <li class="mt-2 mb-1 font-bold">SQLD</li>
-            <li>정보처리기사</li>
+          <strong class="title-sec mt-7 mb-1 block">자격증</strong>
+          <ul class="mt-2 mb-8">
+            <li class="my-2">
+              <div class="flex items-center justify-between">
+                <strong>SQLD (국가 공인 SQL 개발자)</strong>
+                <time class="time" datetime="2021-10">2021.10</time>
+              </div>
+              <p class="font-light">한국데이터산업진흥원</p>
+            </li>
+            <li class="my-2">
+              <div class="flex items-center justify-between">
+                <strong>정보처리기사</strong>
+                <time class="time" datetime="2022-02">2022.02</time>
+              </div>
+              <p class="font-light">과학기술정보통신부</p>
+            </li>
           </ul>
-          <strong class="title-sec mb-1">수상 내역</strong>
-          <ul>
-            <li>엄청난 상</li>
-            <li>밥상</li>
+          <strong class="title-sec mb-1 block">수상 내역</strong>
+          <ul class="mt-2 mb-8">
+            <li class="my-2">
+              <div class="flex items-center justify-between">
+                <strong>엄청난 상</strong>
+                <time class="time" datetime="2022-05">2022.05</time>
+              </div>
+              <p class="font-light">멋쟁이사자대학교</p>
+            </li>
+            <li class="my-2">
+              <div class="flex items-center justify-between">
+                <strong>밥상</strong>
+                <time class="time" datetime="2021-10">2021.10</time>
+              </div>
+              <p class="font-light">멋쟁이사자대학교</p>
+            </li>
           </ul>
-          <strong class="title-sec mb-1">수강 내역</strong>
-          <ul>
-            <li>멋쟁이 사자처럼 FE School 3기</li>
-            <li>AWS Cloud Practitioner Essentials</li>
-            <li>React JS 마스터클래스</li>
+          <strong class="title-sec mb-1 block">수강 내역</strong>
+          <ul class="mt-2 mb-8">
+            <li class="my-2">
+              <div class="flex items-center justify-between">
+                <strong>멋쟁이 사자처럼 FE School 3기</strong>
+                <span class="time">
+                  <time
+                    class="after:mx-1 after:inline-block after:content-['~']"
+                    datetime="2022-08"
+                    >2022.08</time
+                  >
+                  <time class="time" datetime="2023-01">2023.01</time></span
+                >
+              </div>
+              <p class="font-light">부트캠프</p>
+            </li>
+            <li>
+              <div class="flex items-center justify-between">
+                <strong>AWS Cloud Practitioner Essentials</strong>
+                <time class="time" datetime="2022-08-18">2022.08.18</time>
+              </div>
+              <p class="flex flex-col font-light">
+                Amazon Web Service Training and Certification
+                <a class="link w-fit" href="#">수료증</a>
+              </p>
+            </li>
           </ul>
         </section>
         <section class="section-main">
           <h2 class="title-pri">학력</h2>
-          <strong class="title-sec mb-1">멋쟁이사자대학교</strong>
+          <div class="flex items-center justify-between">
+            <strong class="title-sec mb-1">멋쟁이사자대학교</strong>
+            <span class="time">
+              <time
+                class="after:mx-1 after:inline-block after:content-['~']"
+                datetime="2017-03"
+                >2017.03</time
+              >
+              <time class="time" datetime="2023-02">2023.02</time></span
+            >
+          </div>
           <p>프론트엔드공학과</p>
         </section>
       </main>
