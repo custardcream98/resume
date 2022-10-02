@@ -5,12 +5,9 @@ module.exports = {
   content: ["./index.html"],
   theme: {
     extend: {
-      // boxShadow: {
-      //   material1:
-      //     "rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px",
-      //   material2:
-      //     "rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px",
-      // },
+      gridTemplateColumns: {
+        pc: "1fr 2fr",
+      },
       fontFamily: {
         sans: ["Noto Sans KR", ...defaultTheme.fontFamily.sans],
       },
@@ -29,6 +26,24 @@ module.exports = {
         blue3: "#0961F0",
         blue4: "#0978F0",
         blue5: "#03B8F4",
+      },
+      fontSize: {
+        "3xl": [
+          "1.875rem",
+          {
+            lineHeight: "2.25rem",
+            letterSpacing: "-0.02em",
+            fontWeight: "700",
+          },
+        ],
+        "4xl": [
+          "2.5rem",
+          {
+            lineHeight: "2.5rem",
+            letterSpacing: "-0.02em",
+            fontWeight: "900",
+          },
+        ],
       },
     },
   },

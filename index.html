@@ -14,56 +14,57 @@
     <!-- prettier config를 이용해 자동으로 스타일 클래스의 순서가 정렬됩니다. -->
   </head>
   <body
-    class="bg-smokewhite bg-gradient-to-b from-blue-200 to-smokewhite bg-[length:100vw_80px] bg-no-repeat pt-8"
+    class="bg-smokewhite bg-gradient-to-b from-blue-200 to-smokewhite bg-[length:100vw_80px] bg-no-repeat py-8"
   >
     <div class="m-auto max-w-5xl text-textgray">
       <header class="mb-5 flex items-center p-5">
         <img
-          class="h-[130px] w-[130px] rounded-full shadow-lg"
+          class="h-[130px] w-[130px] rounded-full shadow-lg md:order-2 md:ml-5 md:h-[200px] md:w-[200px]"
           src="./img/profile.jpeg"
           alt=""
         />
-        <div class="ml-5 flex-grow">
-          <p class="text-1xl font-bold">안녕하세요,</p>
-          <h1 class="flex flex-col font-black">
+        <div class="ml-5 flex-grow md:order-1">
+          <p class="text-1xl font-bold md:text-right md:text-2xl">
+            안녕하세요,
+          </p>
+          <h1 class="flex flex-col font-black md:items-end">
             <span
-              class="my-1 w-fit bg-gradient-to-r from-blue1 to-blue5 bg-clip-text text-2xl text-transparent"
+              class="my-1 w-fit bg-gradient-to-r from-blue1 to-blue5 bg-clip-text text-2xl text-transparent md:text-3xl"
               >주니어 프론트엔드 개발자</span
             >
             <span
-              class="w-fit bg-gradient-to-r from-blue1 to-blue5 py-1 px-2 text-3xl text-smokewhite"
+              class="w-fit bg-gradient-to-r from-blue1 to-blue5 py-1 px-2 text-3xl text-smokewhite md:py-2 md:text-4xl"
             >
               박시우입니다.
             </span>
           </h1>
         </div>
       </header>
-      <main>
-        <section class="my-7 flex items-center">
-          <h2 class="w-[170px] text-center text-xl font-bold text-darkgray1">
-            Contact
-          </h2>
+      <main class="md:row-auto md:grid md:grid-cols-pc md:gap-x-[20px]">
+        <article
+          class="m-2 mb-7 flex self-center rounded-lg p-4 shadow-inner md:order-1"
+        >
+          <h2 class="sr-only">Contact</h2>
           <address class="text-darkgray2">
             <span
-              class="after:relative after:top-[3px] after:mx-2 after:inline-block after:h-[15px] after:w-[2px] after:bg-darkgray2"
+              class="after:relative after:top-[3px] after:mx-2 after:inline-block after:h-[15px] after:w-[2px] after:rotate-12 after:bg-darkgray2"
               >Email</span
-            >
-            <a href="mailto:likelion@example.com" target="_blank"
+            ><a href="mailto:likelion@example.com" target="_blank"
               >likelion@example.com</a
             ><br />
             <span
-              class="after:relative after:top-[3px] after:mx-2 after:inline-block after:h-[15px] after:w-[2px] after:bg-darkgray2"
+              class="after:relative after:top-[3px] after:mx-2 after:inline-block after:h-[15px] after:w-[2px] after:rotate-12 after:bg-darkgray2"
               >Github</span
             ><a href="#">www.example.com</a><br />
             <span
-              class="after:relative after:top-[3px] after:mx-2 after:inline-block after:h-[15px] after:w-[2px] after:bg-darkgray2"
+              class="after:relative after:top-[3px] after:mx-2 after:inline-block after:h-[15px] after:w-[2px] after:rotate-12 after:bg-darkgray2"
               >Blog</span
             ><a href="#">www.example.com</a>
           </address>
-        </section>
-        <section class="section-main">
+        </article>
+        <section class="mb-2 p-5 md:order-1">
           <h2 class="title-pri">자기소개</h2>
-          <p class="leading-relaxed">
+          <p class="mt-5 leading-relaxed">
             이것이야말로 이상의 위하여서 힘있다. 이상의 어디 끝에 같이 피고, 이
             쓸쓸하랴? 대고, 황금시대의 피가 곳이 피부가 들어 간에 그림자는
             힘있다. 이 실로 것이 하였으며, 따뜻한 교향악이다. 웅대한 청춘의 작고
@@ -73,7 +74,7 @@
             대중을 칼이다. 때에, 두기 천하를 칼이다.
           </p>
         </section>
-        <section class="section-main">
+        <section class="section-main md:order-1 md:col-span-2">
           <h2 class="title-pri">
             스택
             <span class="text-sm font-medium text-textgray"
@@ -138,7 +139,7 @@
             </li>
           </ul>
         </section>
-        <section class="section-main">
+        <section class="section-main md:order-3 md:row-span-2">
           <h2 class="title-pri">프로젝트</h2>
           <ul>
             <li class="my-10">
@@ -158,13 +159,14 @@
                 프로젝트 설명. 프로젝트 설명. 프로젝트 설명. 프로젝트 설명.
                 프로젝트 설명.
               </p>
-              <strong class="mt-3 block">사용한 스택</strong>
+              <strong class="sr-only">사용한 스택</strong>
               <ul class="stack-badge-list-wrapper my-2">
                 <li class="stack-badge bg-[#e34c2640] text-[#e34c26]">
                   HTML Living Standard
                 </li>
                 <li class="stack-badge bg-[#264de440] text-[#264de4]">CSS</li>
               </ul>
+              <strong class="sr-only">성과</strong>
               <ul class="ml-6 list-disc">
                 <li>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -194,7 +196,7 @@
                 프로젝트 설명. 프로젝트 설명. 프로젝트 설명. 프로젝트 설명.
                 프로젝트 설명.
               </p>
-              <strong class="mt-3 block">사용한 스택</strong>
+              <strong class="sr-only">사용한 스택</strong>
               <ul class="stack-badge-list-wrapper my-2">
                 <li class="stack-badge bg-[#e34c2640] text-[#e34c26]">
                   HTML Living Standard
@@ -202,6 +204,7 @@
                 <li class="stack-badge bg-[#264de440] text-[#264de4]">CSS</li>
                 <li class="stack-badge bg-[#f0db4f40]">JavaScript</li>
               </ul>
+              <strong class="sr-only">성과</strong>
               <ul class="ml-6 list-disc">
                 <li>
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -231,7 +234,7 @@
                 프로젝트 설명. 프로젝트 설명. 프로젝트 설명. 프로젝트 설명.
                 프로젝트 설명.
               </p>
-              <strong class="mt-3 block">사용한 스택</strong>
+              <strong class="sr-only">사용한 스택</strong>
               <ul class="stack-badge-list-wrapper my-2">
                 <li class="stack-badge bg-[#e34c2640] text-[#e34c26]">
                   HTML Living Standard
@@ -241,6 +244,7 @@
                   Tailwind
                 </li>
               </ul>
+              <strong class="sr-only">성과</strong>
               <ul class="ml-6 list-disc">
                 <li>
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -270,13 +274,14 @@
                 프로젝트 설명. 프로젝트 설명. 프로젝트 설명. 프로젝트 설명.
                 프로젝트 설명.
               </p>
-              <strong class="mt-3 block">사용한 스택</strong>
+              <strong class="sr-only">사용한 스택</strong>
               <ul class="stack-badge-list-wrapper my-2">
                 <li class="stack-badge bg-[#e34c2640] text-[#e34c26]">
                   HTML Living Standard
                 </li>
                 <li class="stack-badge bg-[#264de440] text-[#264de4]">CSS</li>
               </ul>
+              <strong class="sr-only">성과</strong>
               <ul class="ml-6 list-disc">
                 <li>
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -291,7 +296,8 @@
             </li>
           </ul>
         </section>
-        <section class="section-main">
+        <div class="sr-only md:relative md:order-5"></div>
+        <section class="section-main md:order-6">
           <h2 class="title-pri">이력</h2>
           <ul>
             <li class="my-10">
@@ -354,7 +360,7 @@
             </li>
           </ul>
         </section>
-        <section class="section-main">
+        <section class="section-main md:order-2">
           <h2 class="title-pri">기타</h2>
           <strong class="title-sec mt-7 mb-1 block">자격증</strong>
           <ul class="mt-2 mb-8">
@@ -418,9 +424,9 @@
             </li>
           </ul>
         </section>
-        <section class="section-main">
+        <section class="section-main md:order-4">
           <h2 class="title-pri">학력</h2>
-          <div class="flex items-center justify-between">
+          <div class="mt-7 flex items-center justify-between">
             <strong class="title-sec mb-1">멋쟁이사자대학교</strong>
             <span class="time">
               <time
