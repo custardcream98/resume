@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .stack-badge {
+    @apply relative whitespace-nowrap rounded-full py-1 px-1.5 text-sm;
+  }
+  .stack-badge-list-wrapper {
+    @apply flex flex-wrap gap-3 font-mono;
+  }
+  .alarm-badge {
+    @apply absolute right-[-10px] top-[-10px] h-5 w-5 rounded-full bg-red-400 text-center leading-[20px] text-white;
+  }
+  .section-main {
+    @apply mb-2 border-t border-gray p-5;
+  }
+  .title-pri {
+    @apply mt-4 mb-3 text-xl font-bold text-blue3;
+  }
+  .title-sec {
+    @apply mt-4 mb-2 block text-lg font-medium;
+  }
+}

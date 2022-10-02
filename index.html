@@ -3,30 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="/dist/css/index.css" rel="stylesheet" />
+    <link href="css/tailwind.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap"
       rel="stylesheet"
     />
     <title>박시우 | 주니어 프론트엔드 개발자</title>
     <!-- prettier config를 이용해 자동으로 스타일 클래스의 순서가 정렬됩니다. -->
   </head>
-  <body>
-    <div class="m-auto max-w-5xl p-5">
-      <header class="mb-5 flex items-center">
+  <body
+    class="bg-smokewhite bg-gradient-to-b from-blue-200 to-smokewhite bg-[length:100vw_80px] bg-no-repeat pt-8"
+  >
+    <div class="m-auto max-w-5xl text-textgray">
+      <header class="mb-5 flex items-center p-5">
         <img
-          class="h-[130px] w-[130px] rounded-full"
+          class="h-[130px] w-[130px] rounded-full shadow-lg"
           src="./src/img/profile.jpeg"
           alt=""
         />
         <div class="ml-5 flex-grow">
           <p class="text-1xl font-bold">안녕하세요,</p>
-          <h1 class="font-black">
-            <span class="my-1 block text-2xl">주니어 프론트엔드 개발자</span>
+          <h1 class="flex flex-col font-black">
             <span
-              class="block w-fit bg-gradient-to-r from-blue1 to-blue5 py-1 px-2 text-3xl text-white"
+              class="my-1 w-fit bg-gradient-to-r from-blue1 to-blue5 bg-clip-text text-2xl text-transparent"
+              >주니어 프론트엔드 개발자</span
+            >
+            <span
+              class="w-fit bg-gradient-to-r from-blue1 to-blue5 py-1 px-2 text-3xl text-smokewhite"
             >
               박시우입니다.
             </span>
@@ -34,36 +39,34 @@
         </div>
       </header>
       <main>
-        <section class="my-8 flex items-center">
-          <h2 class="w-1/4 text-center text-xl font-bold text-darkgray1">
+        <section class="my-7 flex items-center">
+          <h2 class="w-[170px] text-center text-xl font-bold text-darkgray1">
             Contact
           </h2>
-          <ul class="flex-grow text-darkgray2">
-            <li>
+          <ul class="ml-5 flex-grow list-disc text-darkgray2">
+            <li class="my-1">
               <span
-                class="after:content-[' '] after:mx-2 after:inline-block after:h-[13px] after:w-[2px] after:bg-darkgray2"
+                class="after:content-[' '] after:relative after:top-[3px] after:mx-2 after:inline-block after:h-[15px] after:w-[2px] after:bg-darkgray2"
                 >Email</span
               ><a href="#">likelion@example.com</a>
             </li>
-            <li>
+            <li class="my-1">
               <span
-                class="after:content-[' '] after:mx-2 after:inline-block after:h-[13px] after:w-[2px] after:bg-darkgray2"
+                class="after:content-[' '] after:relative after:top-[3px] after:mx-2 after:inline-block after:h-[15px] after:w-[2px] after:bg-darkgray2"
                 >Github</span
               ><a href="#">www.example.com</a>
             </li>
-            <li>
+            <li class="my-1">
               <span
-                class="after:content-[' '] after:mx-2 after:inline-block after:h-[13px] after:w-[2px] after:bg-darkgray2"
+                class="after:content-[' '] after:relative after:top-[3px] after:mx-2 after:inline-block after:h-[15px] after:w-[2px] after:bg-darkgray2"
                 >Blog</span
               ><a href="#">www.example.com</a>
             </li>
           </ul>
         </section>
-        <section class="mb-3 rounded-2xl p-5 shadow-section">
-          <h2 class="border-b-2 border-gray pb-1 text-2xl font-bold text-blue3">
-            자기소개
-          </h2>
-          <p>
+        <section class="section-main">
+          <h2 class="title-pri">자기소개</h2>
+          <p class="leading-relaxed">
             이것이야말로 이상의 위하여서 힘있다. 이상의 어디 끝에 같이 피고, 이
             쓸쓸하랴? 대고, 황금시대의 피가 곳이 피부가 들어 간에 그림자는
             힘있다. 이 실로 것이 하였으며, 따뜻한 교향악이다. 웅대한 청춘의 작고
@@ -73,22 +76,72 @@
             대중을 칼이다. 때에, 두기 천하를 칼이다.
           </p>
         </section>
-        <section>
-          <h2>스택</h2>
-          <p>(진행한 프로젝트 수)</p>
-          <ul>
-            <li>HTML Living Standard</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>TypeScript</li>
-            <li>Sass</li>
-            <li>Tailwind</li>
-            <li>React.js</li>
-            <li>Next.js</li>
+        <section class="section-main">
+          <div>
+            <h2 class="title-pri inline-block">스택</h2>
+            <p class="inline-block pb-3 text-sm">(진행한 프로젝트 수)</p>
+          </div>
+          <strong class="title-sec">Frontend</strong>
+          <ul class="stack-badge-list-wrapper">
+            <li class="stack-badge bg-[#f0db4f40]">
+              JavaScript
+              <div class="alarm-badge">4</div>
+            </li>
+            <li class="stack-badge bg-[#007acc40] text-[#007acc]">
+              TypeScript
+              <div class="alarm-badge">2</div>
+            </li>
+            <li class="stack-badge bg-[#61DBFB40]">
+              React.js
+              <div class="alarm-badge">3</div>
+            </li>
+            <li class="stack-badge bg-[#00000040] text-white">
+              Next.js
+              <div class="alarm-badge">2</div>
+            </li>
+            <li class="stack-badge bg-[#e34c2640] text-[#e34c26]">
+              HTML Living Standard
+              <div class="alarm-badge">4</div>
+            </li>
+            <li class="stack-badge bg-[#264de440] text-[#264de4]">
+              CSS
+              <div class="alarm-badge">4</div>
+            </li>
+
+            <li class="stack-badge bg-[#cc669940] text-[#cc6699]">
+              Sass
+              <div class="alarm-badge">1</div>
+            </li>
+            <li class="stack-badge bg-[#39bcf740] text-[#39bcf7]">
+              Tailwind
+              <div class="alarm-badge">2</div>
+            </li>
+          </ul>
+          <strong class="title-sec">Backend</strong>
+          <ul class="stack-badge-list-wrapper">
+            <li class="stack-badge bg-[#092e2040] text-[#092e20]">
+              Django
+              <div class="alarm-badge">1</div>
+            </li>
+            <li class="stack-badge bg-[#68A06340] text-[#68A063]">
+              Express
+              <div class="alarm-badge">1</div>
+            </li>
+          </ul>
+          <strong class="title-sec">Database</strong>
+          <ul class="stack-badge-list-wrapper">
+            <li class="stack-badge bg-[#33679140] text-[#336791]">
+              PostgreSQL
+              <div class="alarm-badge">2</div>
+            </li>
+            <li class="stack-badge bg-[#FFA61140] text-[#FFA611]">
+              Firebase
+              <div class="alarm-badge">3</div>
+            </li>
           </ul>
         </section>
-        <section>
-          <h2>프로젝트</h2>
+        <section class="section-main">
+          <h2 class="title-pri">프로젝트</h2>
           <ul>
             <li>
               <strong>1만 시간의 법칙</strong>

@@ -4,19 +4,26 @@ const defaultTheme = require("tailwindcss/defaultTheme");
 module.exports = {
   content: ["./index.html"],
   theme: {
-    fontFamily: {
-      sans: ["Noto Sans KR", ...defaultTheme.fontFamily.sans],
-    },
     extend: {
-      boxShadow: {
-        section: "0 0 60px -10px rgba(0, 0, 0, 0.3)",
+      // boxShadow: {
+      //   material1:
+      //     "rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px",
+      //   material2:
+      //     "rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px",
+      // },
+      fontFamily: {
+        sans: ["Noto Sans KR", ...defaultTheme.fontFamily.sans],
+      },
+      backgroundSize: {
+        16: "4rem",
       },
       colors: {
         black: "#222222",
         gray: "#E9E9E9",
+        textgray: "#737373",
         darkgray1: "#909090",
         darkgray2: "#B0B0B0",
-        white: "#F0F0F0",
+        smokewhite: "#fcfdfe",
         blue1: "#0938F0",
         blue2: "#094AF0",
         blue3: "#0961F0",
