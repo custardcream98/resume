@@ -1149,54 +1149,14 @@ video {
   top: 3px;
 }
 
-.after\:left-0::after {
+.after\:top-\[5px\]::after {
   content: var(--tw-content);
-  left: 0px;
-}
-
-.after\:left-\[10px\]::after {
-  content: var(--tw-content);
-  left: 10px;
-}
-
-.after\:left-\[70px\]::after {
-  content: var(--tw-content);
-  left: 70px;
-}
-
-.after\:left-\[50px\]::after {
-  content: var(--tw-content);
-  left: 50px;
-}
-
-.after\:left-\[40px\]::after {
-  content: var(--tw-content);
-  left: 40px;
-}
-
-.after\:left-\[45px\]::after {
-  content: var(--tw-content);
-  left: 45px;
-}
-
-.after\:left-\[47px\]::after {
-  content: var(--tw-content);
-  left: 47px;
+  top: 5px;
 }
 
 .after\:left-\[48px\]::after {
   content: var(--tw-content);
   left: 48px;
-}
-
-.after\:top-\[4px\]::after {
-  content: var(--tw-content);
-  top: 4px;
-}
-
-.after\:top-\[5px\]::after {
-  content: var(--tw-content);
-  top: 5px;
 }
 
 .after\:mx-2::after {
