@@ -19,6 +19,12 @@
     @apply mt-4 mb-3 text-xl font-bold text-blue3;
   }
   .title-sec {
-    @apply mt-4 mb-2 block text-lg font-medium;
+    @apply block text-lg font-semibold text-black;
+  }
+  .time {
+    @apply float-right text-sm font-light text-textgray;
+  }
+  .link {
+    @apply inline-block px-1 hover:rounded hover:bg-blue4 hover:text-smokewhite hover:transition-all;
   }
 }

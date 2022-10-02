@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700;900&display=swap"
       rel="stylesheet"
     />
     <title>박시우 | 주니어 프론트엔드 개발자</title>
@@ -20,7 +20,7 @@
       <header class="mb-5 flex items-center p-5">
         <img
           class="h-[130px] w-[130px] rounded-full shadow-lg"
-          src="./src/img/profile.jpeg"
+          src="./img/profile.jpeg"
           alt=""
         />
         <div class="ml-5 flex-grow">
@@ -46,19 +46,19 @@
           <ul class="ml-5 flex-grow list-disc text-darkgray2">
             <li class="my-1">
               <span
-                class="after:content-[' '] after:relative after:top-[3px] after:mx-2 after:inline-block after:h-[15px] after:w-[2px] after:bg-darkgray2"
+                class="after:relative after:top-[3px] after:mx-2 after:inline-block after:h-[15px] after:w-[2px] after:bg-darkgray2"
                 >Email</span
               ><a href="#">likelion@example.com</a>
             </li>
             <li class="my-1">
               <span
-                class="after:content-[' '] after:relative after:top-[3px] after:mx-2 after:inline-block after:h-[15px] after:w-[2px] after:bg-darkgray2"
+                class="after:relative after:top-[3px] after:mx-2 after:inline-block after:h-[15px] after:w-[2px] after:bg-darkgray2"
                 >Github</span
               ><a href="#">www.example.com</a>
             </li>
             <li class="my-1">
               <span
-                class="after:content-[' '] after:relative after:top-[3px] after:mx-2 after:inline-block after:h-[15px] after:w-[2px] after:bg-darkgray2"
+                class="after:relative after:top-[3px] after:mx-2 after:inline-block after:h-[15px] after:w-[2px] after:bg-darkgray2"
                 >Blog</span
               ><a href="#">www.example.com</a>
             </li>
@@ -79,9 +79,9 @@
         <section class="section-main">
           <div>
             <h2 class="title-pri inline-block">스택</h2>
-            <p class="inline-block pb-3 text-sm">(진행한 프로젝트 수)</p>
+            <p class="inline-block text-sm">(진행한 프로젝트 수)</p>
           </div>
-          <strong class="title-sec">Frontend</strong>
+          <strong class="title-sec mt-5 mb-3">Frontend</strong>
           <ul class="stack-badge-list-wrapper">
             <li class="stack-badge bg-[#f0db4f40]">
               JavaScript
@@ -107,7 +107,6 @@
               CSS
               <div class="alarm-badge">4</div>
             </li>
-
             <li class="stack-badge bg-[#cc669940] text-[#cc6699]">
               Sass
               <div class="alarm-badge">1</div>
@@ -117,7 +116,7 @@
               <div class="alarm-badge">2</div>
             </li>
           </ul>
-          <strong class="title-sec">Backend</strong>
+          <strong class="title-sec mt-5 mb-3">Backend</strong>
           <ul class="stack-badge-list-wrapper">
             <li class="stack-badge bg-[#092e2040] text-[#092e20]">
               Django
@@ -128,7 +127,7 @@
               <div class="alarm-badge">1</div>
             </li>
           </ul>
-          <strong class="title-sec">Database</strong>
+          <strong class="title-sec mt-5 mb-3">Database</strong>
           <ul class="stack-badge-list-wrapper">
             <li class="stack-badge bg-[#33679140] text-[#336791]">
               PostgreSQL
@@ -143,17 +142,31 @@
         <section class="section-main">
           <h2 class="title-pri">프로젝트</h2>
           <ul>
-            <li>
-              <strong>1만 시간의 법칙</strong>
-              <time datetime=""></time>
-              <p></p>
-              <strong>사용한 기술:</strong>
-              <ul>
-                <li>HTML Living Standard</li>
-                <li>CSS</li>
+            <li class="my-10">
+              <strong class="title-sec mb-1">
+                1만 시간의 법칙
+                <time class="time" datetime="2022-09">2022.09</time>
+              </strong>
+              <p class="mb-1 text-[0.95rem]">
+                <a
+                  class="link relative ml-[20px] before:absolute before:top-[4px] before:left-[-18px] before:h-[17px] before:w-[17px] before:bg-[url('../img/icon-github.svg')]"
+                  href="#"
+                >
+                  Github</a
+                ><a class="link" href="#">서비스 링크</a>
+              </p>
+              <p>
+                프로젝트 설명. 프로젝트 설명. 프로젝트 설명. 프로젝트 설명.
+                프로젝트 설명.
+              </p>
+              <strong class="mt-3 block">사용한 스택</strong>
+              <ul class="stack-badge-list-wrapper my-2">
+                <li class="stack-badge bg-[#e34c2640] text-[#e34c26]">
+                  HTML Living Standard
+                </li>
+                <li class="stack-badge bg-[#264de440] text-[#264de4]">CSS</li>
               </ul>
-              <p>프로젝트 링크<a href=""></a><a href=""></a></p>
-              <ul>
+              <ul class="ml-5 list-disc">
                 <li>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 </li>
@@ -165,41 +178,32 @@
                 </li>
               </ul>
             </li>
-            <li>
-              <strong>벤딩머신</strong>
-              <time datetime=""></time>
-              <p></p>
-              <strong>사용한 기술:</strong>
-              <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-              </ul>
-              <p>프로젝트 링크<a href=""></a><a href=""></a></p>
-              <ul>
-                <li>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            <li class="my-10">
+              <strong class="title-sec mb-1">
+                벤딩머신
+                <time class="time" datetime="2022-09">2022.09</time>
+              </strong>
+              <p class="mb-1 text-[0.95rem]">
+                <a
+                  class="link relative ml-[20px] before:absolute before:top-[4px] before:left-[-18px] before:h-[17px] before:w-[17px] before:bg-[url('../img/icon-github.svg')]"
+                  href="#"
+                >
+                  Github</a
+                ><a class="link" href="#">서비스 링크</a>
+              </p>
+              <p>
+                프로젝트 설명. 프로젝트 설명. 프로젝트 설명. 프로젝트 설명.
+                프로젝트 설명.
+              </p>
+              <strong class="mt-3 block">사용한 스택</strong>
+              <ul class="stack-badge-list-wrapper my-2">
+                <li class="stack-badge bg-[#e34c2640] text-[#e34c26]">
+                  HTML Living Standard
                 </li>
-                <li>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                </li>
-                <li>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                </li>
+                <li class="stack-badge bg-[#264de440] text-[#264de4]">CSS</li>
+                <li class="stack-badge bg-[#f0db4f40]">JavaScript</li>
               </ul>
-            </li>
-            <li>
-              <strong>오픈마켓</strong>
-              <time datetime=""></time>
-              <p></p>
-              <strong>사용한 기술:</strong>
-              <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-              </ul>
-              <p>프로젝트 링크<a href=""></a><a href=""></a></p>
-              <ul>
+              <ul class="ml-5 list-disc">
                 <li>
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 </li>
@@ -211,18 +215,70 @@
                 </li>
               </ul>
             </li>
-            <li>
-              <strong>웹 이력서</strong>
-              <time datetime=""></time>
-              <p></p>
-              <strong>사용한 기술:</strong>
-              <ul>
-                <li></li>
-                <li></li>
-                <li></li>
+            <li class="my-10">
+              <strong class="title-sec mb-1">
+                웹 이력서
+                <time class="time" datetime="2022-10">2022.10</time>
+              </strong>
+              <p class="mb-1 text-[0.95rem]">
+                <a
+                  class="link relative ml-[20px] before:absolute before:top-[4px] before:left-[-18px] before:h-[17px] before:w-[17px] before:bg-[url('../img/icon-github.svg')]"
+                  href="#"
+                >
+                  Github</a
+                ><a class="link" href="#">서비스 링크</a>
+              </p>
+              <p>
+                프로젝트 설명. 프로젝트 설명. 프로젝트 설명. 프로젝트 설명.
+                프로젝트 설명.
+              </p>
+              <strong class="mt-3 block">사용한 스택</strong>
+              <ul class="stack-badge-list-wrapper my-2">
+                <li class="stack-badge bg-[#e34c2640] text-[#e34c26]">
+                  HTML Living Standard
+                </li>
+                <li class="stack-badge bg-[#264de440] text-[#264de4]">CSS</li>
+                <li class="stack-badge bg-[#39bcf740] text-[#39bcf7]">
+                  Tailwind
+                </li>
               </ul>
-              <p>프로젝트 링크<a href=""></a><a href=""></a></p>
-              <ul>
+              <ul class="ml-5 list-disc">
+                <li>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                </li>
+                <li>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                </li>
+                <li>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                </li>
+              </ul>
+            </li>
+            <li class="my-10">
+              <strong class="title-sec mb-1">
+                오픈마켓
+                <time class="time" datetime="2022-12">2022.12</time>
+              </strong>
+              <p class="mb-1 text-[0.95rem]">
+                <a
+                  class="link relative ml-[20px] before:absolute before:top-[4px] before:left-[-18px] before:h-[17px] before:w-[17px] before:bg-[url('../img/icon-github.svg')]"
+                  href="#"
+                >
+                  Github</a
+                ><a class="link" href="#">서비스 링크</a>
+              </p>
+              <p>
+                프로젝트 설명. 프로젝트 설명. 프로젝트 설명. 프로젝트 설명.
+                프로젝트 설명.
+              </p>
+              <strong class="mt-3 block">사용한 스택</strong>
+              <ul class="stack-badge-list-wrapper my-2">
+                <li class="stack-badge bg-[#e34c2640] text-[#e34c26]">
+                  HTML Living Standard
+                </li>
+                <li class="stack-badge bg-[#264de440] text-[#264de4]">CSS</li>
+              </ul>
+              <ul class="ml-5 list-disc">
                 <li>
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 </li>
