@@ -25,6 +25,6 @@
     @apply whitespace-nowrap text-sm font-light text-textgray;
   }
   .link {
-    @apply inline-block px-1 hover:rounded hover:bg-blue4 hover:text-smokewhite hover:transition-all;
+    @apply px-1 hover:rounded hover:bg-blue4 hover:text-smokewhite hover:transition-all;
   }
 }
