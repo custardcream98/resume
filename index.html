@@ -166,7 +166,7 @@
                 </li>
                 <li class="stack-badge bg-[#264de440] text-[#264de4]">CSS</li>
               </ul>
-              <ul class="ml-5 list-disc">
+              <ul class="ml-6 list-disc">
                 <li>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 </li>
@@ -203,7 +203,7 @@
                 <li class="stack-badge bg-[#264de440] text-[#264de4]">CSS</li>
                 <li class="stack-badge bg-[#f0db4f40]">JavaScript</li>
               </ul>
-              <ul class="ml-5 list-disc">
+              <ul class="ml-6 list-disc">
                 <li>
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 </li>
@@ -242,7 +242,7 @@
                   Tailwind
                 </li>
               </ul>
-              <ul class="ml-5 list-disc">
+              <ul class="ml-6 list-disc">
                 <li>
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 </li>
@@ -278,7 +278,7 @@
                 </li>
                 <li class="stack-badge bg-[#264de440] text-[#264de4]">CSS</li>
               </ul>
-              <ul class="ml-5 list-disc">
+              <ul class="ml-6 list-disc">
                 <li>
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 </li>
@@ -292,15 +292,21 @@
             </li>
           </ul>
         </section>
-        <section>
-          <h2>이력</h2>
+        <section class="section-main">
+          <h2 class="title-pri">이력</h2>
           <ul>
-            <li>
-              <strong>Project Manager</strong>
-              <p>위니브</p>
-              <time datetime=""></time>
-              <strong>업무</strong>
-              <ul>
+            <li class="my-10">
+              <strong class="title-sec mb-1"
+                >Project Manager
+                <time
+                  class="time after:mx-1 after:inline-block after:content-['~']"
+                  datetime="2022-08"
+                  >2022.08</time
+                ></strong
+              >
+              <p class="mb-1 text-[0.95rem]">위니브</p>
+              <strong class="mt-3 mb-1 block">업무</strong>
+              <ul class="ml-6 list-disc">
                 <li>
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 </li>
@@ -311,18 +317,26 @@
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 </li>
               </ul>
-              <strong>진행한 프로젝트</strong>
-              <ul>
-                <li>오픈마켓</li>
-                <li>웹 이력서</li>
+              <strong class="mt-3 mb-1 block">진행한 프로젝트</strong>
+              <ul class="ml-6 list-disc">
+                <li><a class="link" href="">벤딩머신</a></li>
+                <li><a class="link" href="">벤딩머신</a></li>
               </ul>
             </li>
-            <li>
-              <strong>멋쟁이 사자</strong>
-              <p>멋사 FE스쿨 3기</p>
-              <time datetime=""></time>
-              <strong>업무</strong>
-              <ul>
+            <li class="my-10">
+              <strong class="title-sec mb-1"
+                >멋쟁이 사자 수강생
+                <span class="time">
+                  <time
+                    class="after:mx-1 after:inline-block after:content-['~']"
+                    datetime="2021-06"
+                    >2021.06</time
+                  ><time class="time" datetime="2022-07">2022.07</time></span
+                ></strong
+              >
+              <p class="mb-1 text-[0.95rem]">멋사 FE스쿨 3기</p>
+              <strong class="mt-3 mb-1 block">업무</strong>
+              <ul class="ml-6 list-disc">
                 <li>
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 </li>
@@ -333,38 +347,37 @@
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 </li>
               </ul>
-              <strong>진행한 프로젝트</strong>
-              <ul>
-                <li>벤딩머신</li>
-                <li>1만 시간의 법칙</li>
+              <strong class="mt-3 mb-1 block">진행한 프로젝트</strong>
+              <ul class="ml-6 list-disc">
+                <li><a class="link" href="">벤딩머신</a></li>
+                <li><a class="link" href="">벤딩머신</a></li>
               </ul>
             </li>
           </ul>
         </section>
-        <section>
-          <h2>기타</h2>
-          <strong>자격증</strong>
+        <section class="section-main">
+          <h2 class="title-pri">기타</h2>
+          <strong class="title-sec mb-1">자격증</strong>
           <ul>
-            <li>SQLD</li>
+            <li class="mt-2 mb-1 font-bold">SQLD</li>
             <li>정보처리기사</li>
           </ul>
-          <strong>수상 내역</strong>
+          <strong class="title-sec mb-1">수상 내역</strong>
           <ul>
             <li>엄청난 상</li>
             <li>밥상</li>
-            <li></li>
           </ul>
-          <strong>수강 내역</strong>
+          <strong class="title-sec mb-1">수강 내역</strong>
           <ul>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li>멋쟁이 사자처럼 FE School 3기</li>
+            <li>AWS Cloud Practitioner Essentials</li>
+            <li>React JS 마스터클래스</li>
           </ul>
         </section>
-        <section>
-          <h2>학력</h2>
-          <strong></strong>
-          <p></p>
+        <section class="section-main">
+          <h2 class="title-pri">학력</h2>
+          <strong class="title-sec mb-1">멋쟁이사자대학교</strong>
+          <p>프론트엔드공학과</p>
         </section>
       </main>
     </div>
