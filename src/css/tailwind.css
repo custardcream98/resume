@@ -3,28 +3,156 @@
 @tailwind utilities;
 
 @layer components {
+  * {
+    word-break: inherit;
+  }
+  :root {
+    word-break: keep-all;
+  }
+
+  .contact {
+    @apply inline-block after:relative after:top-[2px] after:mx-2 after:inline-block after:h-[15px] after:w-[2px] after:bg-darkgray md:block;
+  }
+  .contact:not(:first-child) {
+    @apply mt-[6px];
+  }
+
+  .section-main {
+    @apply mb-2 border-t border-gray p-5;
+  }
+  .section-vertical-separator {
+    @apply md:relative md:ml-5 md:before:absolute md:before:left-[-10px] md:before:top-0 md:before:h-full md:before:w-[1px] md:before:bg-gray;
+  }
+  .title-pri {
+    @apply mt-4 mb-3 text-xl font-bold text-blue2;
+  }
+  .title-sec {
+    @apply text-lg font-semibold text-black;
+  }
+
   .stack-badge {
-    @apply relative whitespace-nowrap rounded-full py-1 px-1.5 text-sm;
+    @apply whitespace-nowrap rounded-full py-1 px-1.5 text-sm shadow;
   }
   .stack-badge-list-wrapper {
     @apply flex flex-wrap gap-3 font-mono;
   }
   .alarm-badge {
-    @apply absolute right-[-10px] top-[-10px] h-5 w-5 rounded-full bg-red-400 text-center leading-[20px] text-white;
+    @apply inline-block h-5 w-5 rounded-full bg-red-400 text-center leading-5  text-white;
   }
-  .section-main {
-    @apply mb-2 border-t border-gray p-5;
-  }
-  .title-pri {
-    @apply mt-4 mb-3 text-xl font-bold text-blue3;
-  }
-  .title-sec {
-    @apply text-lg font-semibold text-black;
+
+  .title-with-time-wrapper {
+    @apply flex items-center justify-between gap-1;
   }
   .time {
     @apply whitespace-nowrap text-sm font-light text-textgray;
   }
+  .time-ongoing {
+    @apply after:mx-1 after:inline-block after:content-['~'];
+  }
+
   .link {
-    @apply px-1 hover:rounded hover:bg-blue4 hover:text-smokewhite hover:transition-all;
+    @apply px-1 text-blue4 hover:rounded hover:bg-blue3 hover:text-smokewhite hover:transition-all;
+  }
+  .link-github {
+    @apply relative ml-5 before:absolute before:top-1 before:left-[-18px] before:h-[17px] before:w-[17px] before:bg-[url('../img/icon-github.svg')];
+  }
+  .link-separator {
+    @apply relative after:absolute after:top-[5px] after:right-[-9px] after:mx-2 after:inline-block after:h-[15px] after:w-[1px] after:bg-blue4;
+  }
+  .link-nomargin {
+    @apply ml-[-4px];
+  }
+
+  .description-list,
+  .description-list ul {
+    @apply ml-6 list-disc;
+  }
+  .description-list li {
+    @apply mt-1;
+  }
+
+  .item-list {
+    @apply mt-2 mb-7;
+  }
+  .item-list li {
+    @apply my-3;
+  }
+  .item-description {
+    @apply text-[0.95rem];
+  }
+
+  .code-box {
+    @apply text-[0.9rem] text-yellow-600;
+  }
+
+  /* Stack Badge Color */
+  .stack-js {
+    @apply bg-[#f0db4f40];
+  }
+  .stack-ts {
+    @apply bg-[#007acc40] text-[#007acc];
+  }
+  .stack-react {
+    @apply bg-[#61DBFB40];
+  }
+  .stack-redux {
+    @apply bg-[#764abc40] text-[#764abc];
+  }
+  .stack-next {
+    @apply bg-[#0000006e] text-white;
+  }
+  .stack-flutter {
+    @apply bg-[#042B5940] text-[#042B59];
+  }
+  .stack-html {
+    @apply bg-[#e34c2640] text-[#e34c26];
+  }
+  .stack-css {
+    @apply bg-[#264de440] text-[#264de4];
+  }
+  .stack-sass {
+    @apply bg-[#cc669940] text-[#cc6699];
+  }
+  .stack-bootstrap {
+    @apply bg-[#563d7c40] text-[#563d7c];
+  }
+  .stack-tailwind {
+    @apply bg-[#39bcf740] text-[#39bcf7];
+  }
+  .stack-styledcomponents {
+    @apply bg-[#de5baa40] text-[#de5baa];
+  }
+  .stack-django {
+    @apply bg-[#092e2040] text-[#092e20];
+  }
+  .stack-node {
+    @apply bg-[#68A06340] text-[#68A063];
+  }
+  .stack-python {
+    @apply bg-[#FFD43B40] text-[#FFD43B];
+  }
+  .stack-postgres {
+    @apply bg-[#33679140] text-[#336791];
+  }
+  .stack-firebase {
+    @apply bg-[#FFA61140] text-[#FFA611];
+  }
+  .stack-aws {
+    @apply bg-[#FF990040] text-[#FF9900];
+  }
+  .stack-figma {
+    @apply bg-[#67a19340] text-[#67a193];
+  }
+  .stack-illustrator {
+    @apply bg-[#945c0440] text-[#945c04];
+  }
+  .stack-git {
+    @apply bg-[#F1502F40] text-[#F1502F];
+  }
+  .stack-discord {
+    @apply bg-[#7289DA40] text-[#7289DA];
+  }
+  .stack-gather {
+    @apply bg-[#4155d040] text-[#4155d0];
   }
 }

@@ -11,21 +11,16 @@ module.exports = {
       fontFamily: {
         sans: ["Noto Sans KR", ...defaultTheme.fontFamily.sans],
       },
-      backgroundSize: {
-        16: "4rem",
-      },
       colors: {
         black: "#222222",
         gray: "#E9E9E9",
         textgray: "#737373",
-        darkgray1: "#909090",
-        darkgray2: "#B0B0B0",
+        darkgray: "#B0B0B0",
         smokewhite: "#fcfdfe",
         blue1: "#0938F0",
-        blue2: "#094AF0",
-        blue3: "#0961F0",
-        blue4: "#0978F0",
-        blue5: "#03B8F4",
+        blue2: "#0961F0",
+        blue3: "#0978F0",
+        blue4: "#03B8F4",
       },
       fontSize: {
         "3xl": [
