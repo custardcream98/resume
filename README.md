@@ -2,6 +2,8 @@
 
 추가 CSS Code 없이 오직 Tailwind + HTML로만 개발하고 있습니다.
 
+[배포된 이력서 보러가기](https://custardcream98.github.io/resume/)
+
 ## Tailwind 수정이 필요할 경우
 
 ```console
