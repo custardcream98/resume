@@ -929,6 +929,10 @@ video {
   position: fixed;
 }
 
+.relative {
+  position: relative;
+}
+
 .bottom-8 {
   bottom: 2rem;
 }
@@ -1123,6 +1127,18 @@ video {
   padding-right: 0.5rem;
 }
 
+.pl-6 {
+  padding-left: 1.5rem;
+}
+
+.pl-7 {
+  padding-left: 1.75rem;
+}
+
+.pl-8 {
+  padding-left: 2rem;
+}
+
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
@@ -1221,6 +1237,101 @@ video {
 
 .delay-75 {
   transition-delay: 75ms;
+}
+
+.before\:absolute::before {
+  content: var(--tw-content);
+  position: absolute;
+}
+
+.before\:left-1::before {
+  content: var(--tw-content);
+  left: 0.25rem;
+}
+
+.before\:top-2::before {
+  content: var(--tw-content);
+  top: 0.5rem;
+}
+
+.before\:left-4::before {
+  content: var(--tw-content);
+  left: 1rem;
+}
+
+.before\:top-4::before {
+  content: var(--tw-content);
+  top: 1rem;
+}
+
+.before\:left-3::before {
+  content: var(--tw-content);
+  left: 0.75rem;
+}
+
+.before\:top-3::before {
+  content: var(--tw-content);
+  top: 0.75rem;
+}
+
+.before\:top-\[15px\]::before {
+  content: var(--tw-content);
+  top: 15px;
+}
+
+.before\:top-\[14px\]::before {
+  content: var(--tw-content);
+  top: 14px;
+}
+
+.before\:left-\[11px\]::before {
+  content: var(--tw-content);
+  left: 11px;
+}
+
+.before\:mr-1::before {
+  content: var(--tw-content);
+  margin-right: 0.25rem;
+}
+
+.before\:inline-block::before {
+  content: var(--tw-content);
+  display: inline-block;
+}
+
+.before\:h-4::before {
+  content: var(--tw-content);
+  height: 1rem;
+}
+
+.before\:h-5::before {
+  content: var(--tw-content);
+  height: 1.25rem;
+}
+
+.before\:w-4::before {
+  content: var(--tw-content);
+  width: 1rem;
+}
+
+.before\:w-5::before {
+  content: var(--tw-content);
+  width: 1.25rem;
+}
+
+.before\:bg-\[url\(\'\.\.\/img\/icon-github\.svg\'\)\]::before {
+  content: var(--tw-content);
+  background-image: url('../img/icon-github.svg');
+}
+
+.before\:bg-\[url\(\.\.\/img\/backhand-index-pointing-up-apple\.png\)\]::before {
+  content: var(--tw-content);
+  background-image: url(../img/backhand-index-pointing-up-apple.png);
+}
+
+.before\:bg-contain::before {
+  content: var(--tw-content);
+  background-size: contain;
 }
 
 .after\:mx-1::after {
