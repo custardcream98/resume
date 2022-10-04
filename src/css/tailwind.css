@@ -10,6 +10,10 @@
     word-break: keep-all;
   }
 
+  .text-shadow {
+    text-shadow: 5px 5px 11px rgba(0, 0, 0, 0.25);
+  }
+
   .contact {
     @apply inline-block after:relative after:top-[2px] after:mx-2 after:inline-block after:h-[15px] after:w-[2px] after:bg-darkgray md:block;
   }
