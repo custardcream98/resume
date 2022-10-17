@@ -35,7 +35,7 @@
   }
 
   .stack-badge {
-    @apply whitespace-nowrap rounded-full py-1 px-1.5 text-sm shadow;
+    @apply whitespace-nowrap rounded-full py-1 px-2 text-[13px] shadow;
   }
   .stack-badge-list-wrapper {
     @apply flex flex-wrap gap-3 font-mono;
@@ -67,12 +67,15 @@
     @apply ml-[-4px];
   }
 
+  /* .description-list {
+    @apply 
+  } */
   .description-list,
   .description-list ul {
     @apply ml-6 list-disc;
   }
   .description-list li {
-    @apply mt-1;
+    @apply mt-1 text-[0.95rem];
   }
 
   .item-list {
