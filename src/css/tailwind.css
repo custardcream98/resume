@@ -33,6 +33,9 @@
   .title-sec {
     @apply text-lg font-semibold text-black;
   }
+  .title-sec em {
+    @apply my-1 block text-sm font-normal text-zinc-500;
+  }
 
   .stack-badge {
     @apply whitespace-nowrap rounded-full py-1 px-2 text-[13px] shadow;
@@ -45,7 +48,7 @@
   }
 
   .title-with-time-wrapper {
-    @apply flex items-center justify-between gap-1;
+    @apply flex items-center justify-between gap-x-3;
   }
   .time {
     @apply whitespace-nowrap text-sm font-light text-textgray;
@@ -67,9 +70,6 @@
     @apply ml-[-4px];
   }
 
-  /* .description-list {
-    @apply 
-  } */
   .description-list,
   .description-list ul {
     @apply ml-6 list-disc;
@@ -104,6 +104,9 @@
   }
   .stack-redux {
     @apply bg-[#764abc40] text-[#764abc];
+  }
+  .stack-recoil {
+    @apply bg-[#286DDB40] text-[#286DDB];
   }
   .stack-next {
     @apply bg-[#0000006e] text-white;
