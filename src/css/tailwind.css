@@ -33,6 +33,9 @@
   .title-sec {
     @apply text-lg font-semibold text-black;
   }
+  .title-sec em {
+    @apply my-1 block text-sm font-normal text-zinc-500;
+  }
 
   .stack-badge {
     @apply whitespace-nowrap rounded-full py-1 px-2 text-[13px] shadow;

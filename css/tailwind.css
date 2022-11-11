@@ -634,6 +634,17 @@ video {
   color: rgb(34 34 34 / var(--tw-text-opacity));
 }
 
+.title-sec em {
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+  display: block;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 400;
+  --tw-text-opacity: 1;
+  color: rgb(113 113 122 / var(--tw-text-opacity));
+}
+
 .stack-badge {
   white-space: nowrap;
   border-radius: 9999px;
