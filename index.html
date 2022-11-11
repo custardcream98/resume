@@ -378,7 +378,7 @@
                   >개발 과정 포스트</a
                 >
               </p>
-              <p>
+              <p class="item-description">
                 1만 시간의 법칙에 따라 목표를 이루려면 하루에 얼마를 투자해야
                 할지 알려주는 Web Service입니다.
               </p>
@@ -441,6 +441,7 @@
                 </li>
                 <li>다른 사용자와 경쟁할 수 있는 리더보드 개발</li>
                 <li>지금까지의 도전 내역을 볼 수 있는 도전내역 페이지 개발</li>
+                <li><code class="code-box">React.lazy()</code>를 활용해 레이지 로딩 구현</li>
               </ul>
             </li>
             <li class="my-7">
@@ -521,10 +522,16 @@
               </div>
               <p class="mb-1 text-[0.95rem]">
                 <a
-                  class="link link-nomargin"
+                  class="link link-separator link-nomargin"
                   href="https://blog.naver.com/sg05098/222596637921"
                   target="_blank"
                   >기능 설명</a
+                >
+                <a
+                  class="link link-nomargin"
+                  href="https://open.kakao.com/o/s9uGYgPd"
+                  target="_blank"
+                  >봇 카카오톡 오픈프로필</a
                 >
               </p>
               <p class="item-description">
@@ -538,7 +545,13 @@
               </ul>
               <strong class="sr-only">성과</strong>
               <ul class="description-list">
-                <li>카카오톡 봇 실 사용자 약 500여 명 (서비스중)</li>
+                <li>카카오톡 봇 실 사용자 약 500여 명 (서비스중)
+                  <ul>
+                    <li>코인 초성검색/이름검색 구현</li>
+                    <li>UPBit, Binance, Gate.io, Bithumb 등 각 거래소별로 상이한 Open API 사용에 맞춰 쿼리 및 데이터 파싱</li>
+                    <li>JSON 파일을 활용해 로컬 데이터베이스 구축, 사용자가 직접 특정 NFT의 한글명을 등록할 수 있도록 기능 구현</li>
+                  </ul>
+                </li>
                 <li>NFT 프로젝트 커뮤니티 관리를 위한 이벤트 봇 개발</li>
                 <li>
                   NFT 정보 검색 및 보유중인 NFT를 한눈에 볼 수 있는 ‘가족사진’
