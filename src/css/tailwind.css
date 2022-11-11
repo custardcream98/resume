@@ -15,7 +15,7 @@
   }
 
   .contact {
-    @apply inline-block after:relative after:top-[2px] after:mx-2 after:inline-block after:h-[15px] after:w-[2px] after:bg-darkgray md:block;
+    @apply inline-block after:relative after:top-[2px] after:mx-2 after:inline-block after:h-[15px] after:w-[2px] after:bg-darkgray;
   }
   .contact:not(:first-child) {
     @apply mt-[6px];
