@@ -63,23 +63,27 @@
   <body
     class="bg-smokewhite bg-gradient-to-b from-blue-200 to-smokewhite bg-[length:100vw_80px] bg-no-repeat py-8"
   >
-    <div class="m-auto max-w-3xl text-textgray">
-      <header class="mb-5 flex items-center p-5">
+    <div class="m-auto max-w-3xl text-textgray print:max-w-[90%]">
+      <header class="mb-5 flex items-center p-5 print:mb-2">
         <img
-          class="h-[130px] w-[130px] rounded-full shadow-lg md:order-2 md:ml-5 md:h-[200px] md:w-[200px]"
+          class="h-[130px] w-[130px] rounded-full shadow-lg print:shadow-none md:order-2 md:ml-5 md:h-[200px] md:w-[200px] print:md:h-[130px] print:md:w-[130px]"
           src="./img/profile.jpeg"
           alt="프로필 사진"
         />
         <div class="text-shadow ml-5 flex-grow md:order-1">
-          <p class="text-sm font-bold md:text-right md:text-2xl">안녕하세요,</p>
+          <p
+            class="text-sm font-bold md:text-right md:text-2xl print:md:text-sm"
+          >
+            안녕하세요,
+          </p>
           <h1 class="flex flex-col font-black md:items-end">
             <span
-              class="my-1 w-fit bg-gradient-to-r from-blue1 to-blue4 bg-clip-text text-xl text-transparent md:mt-2 md:mb-2 md:text-3xl"
+              class="my-1 w-fit bg-gradient-to-r from-blue1 to-blue4 bg-clip-text text-xl text-transparent print:text-blue1 md:mt-2 md:mb-2 md:text-3xl print:md:text-xl"
               ><span class="block md:inline">주니어 </span>프론트엔드
               개발자</span
             >
             <span
-              class="w-fit bg-gradient-to-r from-blue1 to-blue4 py-1 px-2 text-2xl text-smokewhite md:py-2 md:text-4xl"
+              class="w-fit bg-gradient-to-r from-blue1 to-blue4 py-1 px-2 text-2xl text-smokewhite md:py-2 md:text-4xl print:md:py-1 print:md:px-1 print:md:text-2xl"
             >
               박시우입니다.
             </span>
@@ -153,11 +157,11 @@
                 </li>
                 <li class="stack-badge stack-ts">
                   TypeScript
-                  <div class="alarm-badge">3</div>
+                  <div class="alarm-badge">4</div>
                 </li>
                 <li class="stack-badge stack-react">
                   React.js
-                  <div class="alarm-badge">3</div>
+                  <div class="alarm-badge">4</div>
                 </li>
                 <li class="stack-badge stack-next">
                   Next.js
@@ -217,6 +221,60 @@
             <li class="my-7">
               <div class="title-with-time-wrapper">
                 <strong class="title-sec mb-1"
+                  >Share it! <em>개인 프로젝트</em></strong
+                >
+                <time class="time" datetime="2022-11">2022.11</time>
+              </div>
+              <p class="mb-1 text-[0.95rem]">
+                <a
+                  class="link link-github link-separator"
+                  href="https://github.com/custardcream98/share-it"
+                  target="_blank"
+                  >Github</a
+                ><a
+                  class="link"
+                  href="https://share-it-rust.vercel.app/"
+                  target="_blank"
+                  >서비스 링크</a
+                >
+              </p>
+              <p class="item-description">
+                코드를 서로 나눌 수 있도록 마크다운 입력이 가능한
+                커뮤니티입니다.
+              </p>
+              <strong class="sr-only">사용한 스택</strong>
+              <ul class="stack-badge-list-wrapper my-2">
+                <li class="stack-badge stack-react">React.js</li>
+                <li class="stack-badge stack-ts">TypeScript</li>
+                <li class="stack-badge stack-styledcomponents">
+                  styled-components
+                </li>
+                <li class="stack-badge stack-node">Node.js</li>
+                <li class="stack-badge stack-firebase">Firebase</li>
+              </ul>
+              <strong class="sr-only">성과</strong>
+              <ul class="description-list">
+                <li>
+                  <code class="code-box">node-mailer</code> 모듈을 활용해 댓글이
+                  달릴 경우 글 작성자에게 메일을 보내는 API 개발
+                </li>
+                <li>
+                  Code Splitting, 서브셋 폰트 등을 활용해 성능 최적화
+                  <a
+                    class="link"
+                    href="https://custardcream.vercel.app/posts/%EA%B0%9C%EC%9D%B8%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%20Share%20it!%EC%9D%98%20%EC%84%B1%EB%8A%A5%20%EC%B5%9C%EC%A0%81%ED%99%94%ED%95%98%EA%B8%B0"
+                    target="_blank"
+                    >(관련 포스트)</a
+                  >
+                  <ul>
+                    <li>Lighthouse 기준 성능 점수 82점에서 91점으로 향상</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="my-7">
+              <div class="title-with-time-wrapper">
+                <strong class="title-sec mb-1"
                   >기술 블로그 <em>개인 프로젝트</em></strong
                 >
                 <time class="time time-ongoing" datetime="2022-08"
@@ -265,9 +323,19 @@
                 <li>
                   Express.js를 활용해 Thumbnail과 Open Graph Image 생성 자동화
                 </li>
+                <li>
+                  블로그 내 게시물 검색용 엔드포인트 구현 및 debouncing 기법
+                  활용해 API Call 최적화
+                  <a
+                    class="link"
+                    href="https://custardcream.vercel.app/posts/%EB%B8%94%EB%A1%9C%EA%B7%B8%EC%97%90%20%EA%B2%80%EC%83%89%20%EA%B8%B0%EB%8A%A5%EC%9D%84%20%EA%B5%AC%ED%98%84%ED%95%B4%EB%B3%B4%EC%9E%90%202"
+                    target="_blank"
+                    >(관련 포스트)</a
+                  >
+                </li>
               </ul>
             </li>
-            <li id="good-rider" class="my-7">
+            <li id="good-rider" class="my-7 print:break-before-page">
               <div class="title-with-time-wrapper">
                 <strong class="title-sec mb-1"
                   >착한 이륜차 운전자 평가 모델 개발용 설문 웹페이지 개발
@@ -354,51 +422,6 @@
                   </ul>
                 </li>
                 <li>Backend 엔드포인트 명세 설계</li>
-              </ul>
-            </li>
-            <li class="my-7">
-              <div class="title-with-time-wrapper">
-                <strong class="title-sec mb-1"
-                  >1만 시간의 법칙 <em>개인 프로젝트</em></strong
-                >
-                <time class="time" datetime="2022-09">2022.09</time>
-              </div>
-              <p class="mb-1 text-[0.95rem]">
-                <a
-                  class="link link-github link-separator"
-                  href="https://github.com/custardcream98/the-10000-hours-rule"
-                  target="_blank"
-                  >Github</a
-                ><a
-                  class="link link-separator"
-                  href="https://custardcream98.github.io/the-10000-hours-rule/"
-                  target="_blank"
-                  >서비스 링크</a
-                ><a
-                  class="link"
-                  href="https://custardcream.vercel.app/posts/1%EB%A7%8C%20%EC%8B%9C%EA%B0%84%EC%9D%98%20%EB%B2%95%EC%B9%99%20%EB%B0%98%EC%9D%91%ED%98%95%20%EC%9B%B9%20%EA%B0%9C%EB%B0%9C%20%EB%B0%8F%20%ED%94%BC%EB%93%9C%EB%B0%B1"
-                  target="_blank"
-                  >개발 과정 포스트</a
-                >
-              </p>
-              <p class="item-description">
-                1만 시간의 법칙에 따라 목표를 이루려면 하루에 얼마를 투자해야
-                할지 알려주는 Web Service입니다.
-              </p>
-              <strong class="sr-only">사용한 스택</strong>
-              <ul class="stack-badge-list-wrapper my-2">
-                <li class="stack-badge stack-html">HTML</li>
-                <li class="stack-badge stack-css">CSS</li>
-                <li class="stack-badge stack-js">JavaScript</li>
-              </ul>
-              <strong class="sr-only">성과</strong>
-              <ul class="description-list">
-                <li>웹 접근성을 고려해 마크업</li>
-                <li>CSS Sprite 기법을 사용해 웹 로드 효율화</li>
-                <li>
-                  자세한 개발 과정을 블로깅해 아홉 명의 멋쟁이사자처럼 FE School
-                  동료 수강생들에게 감사 인사를 받음
-                </li>
               </ul>
             </li>
             <li class="my-7">
@@ -583,7 +606,7 @@
                 </li>
               </ul>
             </li>
-            <li id="inchon" class="my-7">
+            <li id="inchon" class="my-7 print:break-before-page">
               <div class="title-with-time-wrapper">
                 <strong class="title-sec mb-1"
                   >인천시 생활폐기물 발생량 분석 및 예측 모델 개발
@@ -741,7 +764,9 @@
               <p class="item-description font-light">서울시립대학교, 우수상</p>
             </li>
           </ul>
-          <strong class="title-sec block">수강 내역</strong>
+          <strong class="title-sec block print:break-before-page print:pt-5"
+            >수강 내역</strong
+          >
           <ul class="item-list">
             <li>
               <div class="title-with-time-wrapper">
@@ -803,7 +828,7 @@
     </div>
     <aside class="fixed bottom-8 right-4">
       <a
-        class="relative block rounded-full p-3 pl-8 font-medium shadow-xl backdrop-blur-sm transition-all delay-75 before:absolute before:left-[11px] before:top-[14px] before:mr-1 before:h-5 before:w-5 before:bg-[url(../img/backhand-index-pointing-up-apple.png)] before:bg-contain hover:text-smokewhite hover:backdrop-brightness-90"
+        class="relative block rounded-full p-3 pl-8 font-medium shadow-xl backdrop-blur-sm transition-all delay-75 before:absolute before:left-[11px] before:top-[14px] before:mr-1 before:h-5 before:w-5 before:bg-[url(../img/backhand-index-pointing-up-apple.png)] before:bg-contain hover:text-smokewhite hover:backdrop-brightness-90 print:hidden"
         href="#"
         >맨 위로</a
       >
