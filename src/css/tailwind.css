@@ -22,13 +22,14 @@
   }
 
   .section-main {
-    @apply mb-2 border-t border-gray p-5;
+    @apply mb-2 border-t border-gray p-5 print:p-2;
   }
+
   .section-vertical-separator {
     @apply md:relative md:ml-5 md:before:absolute md:before:left-[-10px] md:before:top-0 md:before:h-full md:before:w-[1px] md:before:bg-gray;
   }
   .title-pri {
-    @apply mt-4 mb-3 text-xl font-bold text-blue2;
+    @apply mt-4 mb-3 text-xl font-bold text-blue2 print:mb-1;
   }
   .title-sec {
     @apply text-lg font-semibold text-black;
@@ -38,13 +39,13 @@
   }
 
   .stack-badge {
-    @apply whitespace-nowrap rounded-full py-1 px-2 text-[13px] shadow;
+    @apply whitespace-nowrap rounded-full py-1 px-2 text-[13px] shadow print:px-[7px] print:text-[10px] print:shadow-none;
   }
   .stack-badge-list-wrapper {
     @apply flex flex-wrap gap-3 font-mono;
   }
   .alarm-badge {
-    @apply inline-block h-5 w-5 rounded-full bg-red-400 text-center leading-5  text-white;
+    @apply inline-block h-5 w-5 rounded-full bg-red-400 text-center leading-5  text-white print:h-4 print:w-4 print:leading-4;
   }
 
   .title-with-time-wrapper {
@@ -164,5 +165,16 @@
   }
   .stack-gather {
     @apply bg-[#4155d040] text-[#4155d0];
+  }
+}
+
+@page {
+  size: A3;
+  margin: 2cm;
+}
+
+@media print {
+  .text-shadow {
+    text-shadow: none;
   }
 }
