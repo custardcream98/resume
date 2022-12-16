@@ -166,6 +166,19 @@
   .stack-gather {
     @apply bg-[#4155d040] text-[#4155d0];
   }
+
+  .fixed-button {
+    @apply fixed;
+  }
+  .fixed-button * {
+    @apply relative block rounded-full p-3 font-medium shadow-xl backdrop-blur-sm transition-all delay-75 before:absolute before:left-[11px] before:top-[14px] before:mr-1 before:h-5 before:w-5 before:bg-contain hover:text-smokewhite hover:backdrop-brightness-90 print:hidden;
+  }
+  .fixed-button a.point-up-emoji {
+    @apply pl-8 before:bg-[url(../img/backhand-index-pointing-up-apple.png)];
+  }
+  .fixed-button button.printer-emoji {
+    @apply pl-9 before:bg-[url(../img/printer-apple.png)];
+  }
 }
 
 @page {
