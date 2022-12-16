@@ -937,6 +937,71 @@ video {
   color: rgb(65 85 208 / var(--tw-text-opacity));
 }
 
+.fixed-button {
+  position: fixed;
+}
+
+.fixed-button * {
+  position: relative;
+  display: block;
+  border-radius: 9999px;
+  padding: 0.75rem;
+  font-weight: 500;
+  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  --tw-backdrop-blur: blur(4px);
+  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+          backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  transition-delay: 75ms;
+}
+
+.fixed-button *::before {
+  position: absolute;
+  left: 11px;
+  top: 14px;
+  margin-right: 0.25rem;
+  height: 1.25rem;
+  width: 1.25rem;
+  content: var(--tw-content);
+  background-size: contain;
+}
+
+.fixed-button *:hover {
+  --tw-text-opacity: 1;
+  color: rgb(252 253 254 / var(--tw-text-opacity));
+  --tw-backdrop-brightness: brightness(.9);
+  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+          backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+}
+
+@media print {
+  .fixed-button * {
+    display: none;
+  }
+}
+
+.fixed-button a.point-up-emoji {
+  padding-left: 2rem;
+}
+
+.fixed-button a.point-up-emoji::before {
+  content: var(--tw-content);
+  background-image: url(../img/backhand-index-pointing-up-apple.png);
+}
+
+.fixed-button button.printer-emoji {
+  padding-left: 2.25rem;
+}
+
+.fixed-button button.printer-emoji::before {
+  content: var(--tw-content);
+  background-image: url(../img/printer-apple.png);
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -949,20 +1014,16 @@ video {
   border-width: 0;
 }
 
-.fixed {
-  position: fixed;
-}
-
-.relative {
-  position: relative;
-}
-
 .bottom-8 {
   bottom: 2rem;
 }
 
 .right-4 {
   right: 1rem;
+}
+
+.left-4 {
+  left: 1rem;
 }
 
 .m-auto {
@@ -1071,10 +1132,6 @@ video {
   border-radius: 9999px;
 }
 
-.border-t-0 {
-  border-top-width: 0px;
-}
-
 .bg-smokewhite {
   --tw-bg-opacity: 1;
   background-color: rgb(252 253 254 / var(--tw-bg-opacity));
@@ -1125,10 +1182,6 @@ video {
   padding: 1.25rem;
 }
 
-.p-3 {
-  padding: 0.75rem;
-}
-
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -1142,10 +1195,6 @@ video {
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
-}
-
-.pl-8 {
-  padding-left: 2rem;
 }
 
 .text-sm {
@@ -1220,28 +1269,6 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.shadow-xl {
-  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
-  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
-.backdrop-blur-sm {
-  --tw-backdrop-blur: blur(4px);
-  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
-          backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
-}
-
-.transition-all {
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
-.delay-75 {
-  transition-delay: 75ms;
-}
-
 @page {
   size: A3;
 
@@ -1252,46 +1279,6 @@ video {
   .text-shadow {
     text-shadow: none;
   }
-}
-
-.before\:absolute::before {
-  content: var(--tw-content);
-  position: absolute;
-}
-
-.before\:left-\[11px\]::before {
-  content: var(--tw-content);
-  left: 11px;
-}
-
-.before\:top-\[14px\]::before {
-  content: var(--tw-content);
-  top: 14px;
-}
-
-.before\:mr-1::before {
-  content: var(--tw-content);
-  margin-right: 0.25rem;
-}
-
-.before\:h-5::before {
-  content: var(--tw-content);
-  height: 1.25rem;
-}
-
-.before\:w-5::before {
-  content: var(--tw-content);
-  width: 1.25rem;
-}
-
-.before\:bg-\[url\(\.\.\/img\/backhand-index-pointing-up-apple\.png\)\]::before {
-  content: var(--tw-content);
-  background-image: url(../img/backhand-index-pointing-up-apple.png);
-}
-
-.before\:bg-contain::before {
-  content: var(--tw-content);
-  background-size: contain;
 }
 
 .after\:mx-1::after {
@@ -1310,28 +1297,9 @@ video {
   content: var(--tw-content);
 }
 
-.hover\:text-smokewhite:hover {
-  --tw-text-opacity: 1;
-  color: rgb(252 253 254 / var(--tw-text-opacity));
-}
-
-.hover\:backdrop-brightness-90:hover {
-  --tw-backdrop-brightness: brightness(.9);
-  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
-          backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
-}
-
 @media print {
   .print\:mb-2 {
     margin-bottom: 0.5rem;
-  }
-
-  .print\:inline-block {
-    display: inline-block;
-  }
-
-  .print\:hidden {
-    display: none;
   }
 
   .print\:max-w-\[90\%\] {
@@ -1447,21 +1415,12 @@ video {
 
 @media print {
   @media (min-width: 768px) {
-    .print\:md\:my-0 {
-      margin-top: 0px;
-      margin-bottom: 0px;
-    }
-
     .print\:md\:ml-auto {
       margin-left: auto;
     }
 
     .print\:md\:block {
       display: block;
-    }
-
-    .print\:md\:inline-block {
-      display: inline-block;
     }
 
     .print\:md\:h-\[130px\] {
