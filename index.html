@@ -66,7 +66,7 @@
     <div class="m-auto max-w-3xl text-textgray print:max-w-[90%]">
       <header class="mb-5 flex items-center p-5 print:mb-2">
         <img
-          class="h-[130px] w-[130px] rounded-full shadow-lg print:shadow-none md:order-2 md:ml-5 md:h-[200px] md:w-[200px] print:md:h-[130px] print:md:w-[130px]"
+          class="h-[130px] w-[130px] rounded-full shadow-lg print:shadow-none md:order-2 md:ml-5 md:h-[180px] md:w-[180px] print:md:h-[130px] print:md:w-[130px]"
           src="./img/profile.jpeg"
           alt="프로필 사진"
         />
@@ -76,14 +76,14 @@
           >
             안녕하세요,
           </p>
-          <h1 class="flex flex-col font-black md:items-end">
+          <h1 class="font-black md:text-end">
             <span
-              class="my-1 w-fit bg-gradient-to-r from-blue1 to-blue4 bg-clip-text text-xl text-transparent print:text-blue1 md:mt-2 md:mb-2 md:text-3xl print:md:text-xl"
+              class="my-1 inline-block w-fit bg-gradient-to-r from-blue1 to-blue4 bg-clip-text text-xl text-transparent print:text-blue1 md:mt-2 md:mb-2 md:text-3xl print:md:ml-auto print:md:block print:md:w-fit print:md:text-xl"
               ><span class="block md:inline">주니어 </span>프론트엔드
               개발자</span
             >
             <span
-              class="w-fit bg-gradient-to-r from-blue1 to-blue4 py-1 px-2 text-2xl text-smokewhite md:py-2 md:text-4xl print:md:py-1 print:md:px-1 print:md:text-2xl"
+              class="block w-fit bg-gradient-to-r from-blue1 to-blue4 py-1 px-2 text-2xl text-smokewhite md:inline-block md:py-2 md:text-4xl print:md:py-1 print:md:px-1 print:md:text-2xl"
             >
               박시우입니다.
             </span>
@@ -91,55 +91,51 @@
         </div>
       </header>
       <main>
-        <div class="flex flex-col p-5 md:flex-row">
-          <article
-            class="flex w-full self-center rounded-lg p-4 shadow md:mr-5 md:w-[500px]"
-          >
-            <h2 class="sr-only">Contact</h2>
-            <address class="not-italic">
-              <span class="contact">Email</span
-              ><a
-                class="link link-nomargin text-sm"
-                href="mailto:sg05098@naver.com"
-                target="_blank"
-                >sg05098@naver.com</a
-              ><br />
-              <span class="contact">Github</span
-              ><a
-                class="link link-nomargin text-sm"
-                href="https://github.com/custardcream98"
-                target="_blank"
-                >https://github.com/custardcream98</a
-              ><br />
-              <span class="contact">Blog</span
-              ><a
-                class="link link-nomargin text-sm"
-                href="https://custardcream.vercel.app/"
-                target="_blank"
-                >https://custardcream.vercel.app/</a
-              >
-            </address>
-          </article>
-          <section class="mb-2">
-            <h2 class="title-pri">자기소개</h2>
-            <div class="mt-5 leading-relaxed">
-              <p>
-                졸업작품 어플리케이션 개발에 매일 3시간만 자며 매달렸을 만큼
-                아무리 사소한 문제라도
-                <strong class="text-blue1"
-                  >시간이 얼마나 걸리든 꼭 해결해야 직성이 풀리는 성격</strong
-                >입니다.
-              </p>
-              <p class="mt-2">
-                더 좋은 커뮤니케이션 방법, 협력 방법을 항상 고민합니다.<br />
-                졸업작품시 Git-flow 기반의 협업을 제안해 효과적인 프로젝트 개발
-                플로우를 구축했으며, 멋쟁이사자처럼 프론트엔드 스쿨의 회고조
-                조장, 스터디 장으로 활동하며 팀 레포지토리, 칭칭이(도움이 필요한
-                동료를 적극적으로 서포트하는 활동) 스터디 등을 이끈 바 있습니다.
-              </p>
-            </div>
-          </section>
-        </div>
+        <article class="section-main">
+          <h2 class="sr-only">Contact</h2>
+          <address class="not-italic">
+            <span class="contact">Email</span
+            ><a
+              class="link link-nomargin text-sm"
+              href="mailto:sg05098@naver.com"
+              target="_blank"
+              >sg05098@naver.com</a
+            ><br />
+            <span class="contact">Github</span
+            ><a
+              class="link link-nomargin text-sm"
+              href="https://github.com/custardcream98"
+              target="_blank"
+              >https://github.com/custardcream98</a
+            ><br />
+            <span class="contact">Blog</span
+            ><a
+              class="link link-nomargin text-sm"
+              href="https://custardcream.vercel.app/"
+              target="_blank"
+              >https://custardcream.vercel.app/</a
+            >
+          </address>
+        </article>
+        <section class="section-main">
+          <h2 class="title-pri">자기소개</h2>
+          <div class="mt-5 leading-relaxed">
+            <p>
+              졸업작품 어플리케이션 개발에 매일 3시간만 자며 매달렸을 만큼
+              아무리 사소한 문제라도
+              <strong class="text-blue1"
+                >시간이 얼마나 걸리든 꼭 해결해야 직성이 풀리는 성격</strong
+              >입니다.
+            </p>
+            <p class="mt-2">
+              더 좋은 커뮤니케이션 방법, 협력 방법을 항상 고민합니다.<br />
+              졸업작품시 Git-flow 기반의 협업을 제안해 효과적인 프로젝트 개발
+              플로우를 구축했으며, 멋쟁이사자처럼 프론트엔드 스쿨의 회고조 조장,
+              스터디 장으로 활동하며 팀 레포지토리, 칭칭이(도움이 필요한 동료를
+              적극적으로 서포트하는 활동) 스터디 등을 이끈 바 있습니다.
+            </p>
+          </div>
+        </section>
         <section class="section-main">
           <h2 class="title-pri">
             스택
@@ -340,7 +336,7 @@
             <li id="good-rider" class="my-7 print:break-before-page">
               <div class="title-with-time-wrapper">
                 <strong class="title-sec mb-1"
-                  >착한 이륜차 운전자 평가 모델 개발용 설문 웹페이지 개발
+                  >착한 이륜차 운전자 평가 모델 개발용 설문 폼 개발
                   <em
                     >개인 프로젝트 - 서울시립대학교 공간 데이터베이스 연구실
                     연구과제</em
@@ -377,12 +373,6 @@
               </ul>
               <strong class="sr-only">성과</strong>
               <ul class="description-list">
-                <li>
-                  불필요한 렌더링을 줄이기 위해
-                  <code class="code-box">memo()</code>,
-                  <code class="code-box">useCallback()</code> 등의 훅을 사용해
-                  최적화
-                </li>
                 <li>
                   Python으로 개발된 유효성 검증 로직을 TypeScript로 마이그레이션
                   <ul>
