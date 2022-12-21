@@ -63,27 +63,29 @@
   <body
     class="bg-smokewhite bg-gradient-to-b from-blue-200 to-smokewhite bg-[length:100vw_80px] bg-no-repeat py-8"
   >
-    <div class="m-auto max-w-3xl text-textgray print:max-w-[90%]">
+    <div
+      class="m-auto mb-[50px] max-w-3xl text-textgray print:mb-0 print:max-w-[90%] content:mb-0"
+    >
       <header class="mb-5 flex items-center p-5 print:mb-2">
         <img
-          class="h-[130px] w-[130px] rounded-full shadow-lg print:shadow-none md:order-2 md:ml-5 md:h-[180px] md:w-[180px] print:md:h-[130px] print:md:w-[130px]"
+          class="md:order-2 md:ml-5 md:h-[180px] md:w-[180px] print:md:h-[130px] print:md:w-[130px] h-[130px] w-[130px] rounded-full shadow-lg print:shadow-none"
           src="./img/profile.jpeg"
           alt="프로필 사진"
         />
-        <div class="text-shadow ml-5 flex-grow md:order-1">
+        <div class="text-shadow md:order-1 ml-5 flex-grow">
           <p
-            class="text-sm font-bold md:text-right md:text-2xl print:md:text-sm"
+            class="md:text-right md:text-2xl print:md:text-sm text-sm font-bold"
           >
             안녕하세요,
           </p>
-          <h1 class="font-black md:text-end">
+          <h1 class="md:text-end font-black">
             <span
-              class="my-1 inline-block w-fit bg-gradient-to-r from-blue1 to-blue4 bg-clip-text text-xl text-transparent print:text-blue1 md:mt-2 md:mb-2 md:text-3xl print:md:ml-auto print:md:block print:md:w-fit print:md:text-xl"
-              ><span class="block md:inline">주니어 </span>프론트엔드
+              class="md:mt-2 md:mb-2 md:text-3xl print:md:ml-auto print:md:block print:md:w-fit print:md:text-xl my-1 inline-block w-fit bg-gradient-to-r from-blue1 to-blue4 bg-clip-text text-xl text-transparent print:text-blue1"
+              ><span class="md:inline block">주니어 </span>프론트엔드
               개발자</span
             >
             <span
-              class="block w-fit bg-gradient-to-r from-blue1 to-blue4 py-1 px-2 text-2xl text-smokewhite md:inline-block md:py-2 md:text-4xl print:md:py-1 print:md:px-1 print:md:text-2xl"
+              class="md:inline-block md:py-2 md:text-4xl print:md:py-1 print:md:px-1 print:md:text-2xl block w-fit bg-gradient-to-r from-blue1 to-blue4 py-1 px-2 text-2xl text-smokewhite"
             >
               박시우입니다.
             </span>
@@ -143,8 +145,8 @@
               >(진행한 프로젝트 수)</span
             >
           </h2>
-          <div class="gap-x-4 md:grid md:grid-cols-2">
-            <div class="my-7 md:mb-0">
+          <div class="md:grid md:grid-cols-2 gap-x-4">
+            <div class="md:mb-0 my-7">
               <strong class="title-sec mb-3 block">Frontend</strong>
               <ul class="stack-badge-list-wrapper">
                 <li class="stack-badge stack-js">
@@ -173,7 +175,7 @@
                 <li class="stack-badge stack-tailwind">Tailwind</li>
               </ul>
             </div>
-            <div class="my-7 md:mb-0">
+            <div class="md:mb-0 my-7">
               <strong class="title-sec mb-3 block">Backend</strong>
               <ul class="stack-badge-list-wrapper">
                 <li class="stack-badge stack-django">
@@ -190,7 +192,7 @@
                 </li>
               </ul>
             </div>
-            <div class="my-7 md:mt-5">
+            <div class="md:mt-5 my-7">
               <strong class="title-sec mb-3 block">Database</strong>
               <ul class="stack-badge-list-wrapper">
                 <li class="stack-badge stack-postgres">
@@ -199,7 +201,7 @@
                 </li>
               </ul>
             </div>
-            <div class="my-7 md:mt-5">
+            <div class="md:mt-5 my-7">
               <strong class="title-sec mb-3 block">ETC / Tools</strong>
               <ul class="stack-badge-list-wrapper">
                 <li class="stack-badge stack-figma">Figma</li>

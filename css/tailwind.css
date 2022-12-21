@@ -1045,6 +1045,10 @@ video {
   margin-bottom: 0.5rem;
 }
 
+.mb-\[50px\] {
+  margin-bottom: 50px;
+}
+
 .mb-5 {
   margin-bottom: 1.25rem;
 }
@@ -1298,6 +1302,10 @@ video {
 }
 
 @media print {
+  .print\:mb-0 {
+    margin-bottom: 0px;
+  }
+
   .print\:mb-2 {
     margin-bottom: 0.5rem;
   }
@@ -1327,139 +1335,8 @@ video {
   }
 }
 
-@media (min-width: 768px) {
-  .md\:order-2 {
-    order: 2;
-  }
-
-  .md\:order-1 {
-    order: 1;
-  }
-
-  .md\:ml-5 {
-    margin-left: 1.25rem;
-  }
-
-  .md\:mt-2 {
-    margin-top: 0.5rem;
-  }
-
-  .md\:mb-2 {
-    margin-bottom: 0.5rem;
-  }
-
-  .md\:mb-0 {
+@media (min-width: 988px) {
+  .content\:mb-0 {
     margin-bottom: 0px;
-  }
-
-  .md\:mt-5 {
-    margin-top: 1.25rem;
-  }
-
-  .md\:inline-block {
-    display: inline-block;
-  }
-
-  .md\:inline {
-    display: inline;
-  }
-
-  .md\:grid {
-    display: grid;
-  }
-
-  .md\:h-\[180px\] {
-    height: 180px;
-  }
-
-  .md\:w-\[180px\] {
-    width: 180px;
-  }
-
-  .md\:grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .md\:py-2 {
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-  }
-
-  .md\:text-right {
-    text-align: right;
-  }
-
-  .md\:text-end {
-    text-align: end;
-  }
-
-  .md\:text-2xl {
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
-
-  .md\:text-3xl {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
-    letter-spacing: -0.02em;
-    font-weight: 700;
-  }
-
-  .md\:text-4xl {
-    font-size: 2.5rem;
-    line-height: 2.5rem;
-    letter-spacing: -0.02em;
-    font-weight: 900;
-  }
-}
-
-@media print {
-  @media (min-width: 768px) {
-    .print\:md\:ml-auto {
-      margin-left: auto;
-    }
-
-    .print\:md\:block {
-      display: block;
-    }
-
-    .print\:md\:h-\[130px\] {
-      height: 130px;
-    }
-
-    .print\:md\:w-\[130px\] {
-      width: 130px;
-    }
-
-    .print\:md\:w-fit {
-      width: -webkit-fit-content;
-      width: -moz-fit-content;
-      width: fit-content;
-    }
-
-    .print\:md\:py-1 {
-      padding-top: 0.25rem;
-      padding-bottom: 0.25rem;
-    }
-
-    .print\:md\:px-1 {
-      padding-left: 0.25rem;
-      padding-right: 0.25rem;
-    }
-
-    .print\:md\:text-sm {
-      font-size: 0.875rem;
-      line-height: 1.25rem;
-    }
-
-    .print\:md\:text-xl {
-      font-size: 1.25rem;
-      line-height: 1.75rem;
-    }
-
-    .print\:md\:text-2xl {
-      font-size: 1.5rem;
-      line-height: 2rem;
-    }
   }
 }
