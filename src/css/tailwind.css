@@ -79,6 +79,14 @@
     @apply mt-1 text-[0.95rem];
   }
 
+  .description-list-small {
+    @apply !mt-[5px] !mb-[10px];
+    font-weight: 300;
+  }
+  .description-list-small li {
+    @apply !my-[2px];
+  }
+
   .item-list {
     @apply mt-2 mb-7;
   }

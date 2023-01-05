@@ -129,12 +129,22 @@
                 >시간이 얼마나 걸리든 꼭 해결해야 직성이 풀리는 성격</strong
               >입니다.
             </p>
-            <p class="mt-2">
-              더 좋은 커뮤니케이션 방법, 협력 방법을 항상 고민합니다.<br />
+            <p class="mt-4">
+              더 좋은
+              <strong class="text-blue1">커뮤니케이션 방법, 협력 방법</strong>을
+              항상 고민합니다.<br />
               졸업작품시 Git-flow 기반의 협업을 제안해 효과적인 프로젝트 개발
               플로우를 구축했으며, 멋쟁이사자처럼 프론트엔드 스쿨의 회고조 조장,
               스터디 장으로 활동하며 팀 레포지토리, 칭칭이(도움이 필요한 동료를
               적극적으로 서포트하는 활동) 스터디 등을 이끈 바 있습니다.
+            </p>
+            <p class="mt-4">
+              <strong class="text-blue1">효율적인 워크플로우</strong>를
+              추구합니다.<br />
+              SVG 파일을 반복적으로 import 해야 하는 상황에서 자동으로 코드를
+              생성하는 node script를 작성해 npm 명령어만으로 간단하게 해결할 수
+              있도록 했으며, 블로그의 썸네일을 자동으로 생성하는 API를 개발하는
+              등 반복적인 작업을 최소화하는 것을 좋아합니다.
             </p>
           </div>
         </section>
@@ -151,7 +161,7 @@
               <ul class="stack-badge-list-wrapper">
                 <li class="stack-badge stack-js">
                   JavaScript
-                  <div class="alarm-badge">5</div>
+                  <div class="alarm-badge">6</div>
                 </li>
                 <li class="stack-badge stack-ts">
                   TypeScript
@@ -159,7 +169,7 @@
                 </li>
                 <li class="stack-badge stack-react">
                   React.js
-                  <div class="alarm-badge">4</div>
+                  <div class="alarm-badge">5</div>
                 </li>
                 <li class="stack-badge stack-next">
                   Next.js
@@ -218,6 +228,120 @@
         <section class="section-main">
           <h2 class="title-pri">프로젝트</h2>
           <ul>
+            <li class="my-7">
+              <div class="title-with-time-wrapper">
+                <strong class="title-sec mb-1"
+                  >Snappy <em>4인 팀프로젝트 - FE 4인, 기여도 50%</em></strong
+                >
+                <time class="time time-ongoing" datetime="2022-12"
+                  >2022.12</time
+                >
+              </div>
+              <p class="mb-1 text-[0.95rem]">
+                <a
+                  class="link link-github link-separator"
+                  href="https://github.com/likelion-devone/snappy"
+                  target="_blank"
+                  >Github</a
+                ><a
+                  class="link link-separator"
+                  href="https://www.icloud.com/keynote/010JUfnE6aCei9AuFDNTjTmvw"
+                  target="_blank"
+                  >발표 자료</a
+                ><a
+                  class="link"
+                  href="https://devone-snappy.vercel.app"
+                  target="_blank"
+                  >서비스 링크</a
+                >
+              </p>
+              <p class="item-description">
+                스냅 사진사와 이용자를 매칭하는 SNS 서비스입니다.
+              </p>
+              <strong class="sr-only">사용한 스택</strong>
+              <ul class="stack-badge-list-wrapper my-2">
+                <li class="stack-badge stack-react">React.js</li>
+                <li class="stack-badge stack-js">JavaScript</li>
+                <li class="stack-badge stack-styledcomponents">
+                  styled-components
+                </li>
+                <li class="stack-badge stack-node">Node.js</li>
+              </ul>
+              <strong class="sr-only">성과</strong>
+              <ul class="description-list">
+                <li>
+                  팀 리더로서 참여
+                  <ul>
+                    <li>
+                      eslint, prettier, Live Share 등 다양한 툴을 활용해 코드
+                      품질 향상 도모
+                    </li>
+                    <li>
+                      Git-flow 활용, issue, commit message, PR 컨벤션 확립 등의
+                      방법으로 협업 효율화
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  Backend API 호출이 용이한
+                  <code class="code-box">useAPI</code> Custom Hook 개발
+                  <a
+                    class="link"
+                    href="https://www.icloud.com/keynote/010JUfnE6aCei9AuFDNTjTmvw#sc3326"
+                    target="_blank"
+                    >(실제 사용 예시)</a
+                  >
+                  <ul>
+                    <li>
+                      서버와의 비동기 통신시 사용되는 반복되는 패턴을 공통
+                      훅으로 분리
+                    </li>
+                    <li>
+                      React State로서 응답과 에러를 헨들링할 수 있도록 개발
+                    </li>
+                    <li>
+                      API를 객체로 관리해 편리한 API 호출이 가능하게끔 설계
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  유연한 컴포넌트 설계를 위해 Compound Component 패턴 활용
+                  <ul>
+                    <li>
+                      로직은 Custom Hook 패턴으로 분리하는 등 유지보수가 용이한
+                      컴포넌트 디자인<a
+                        class="link"
+                        href="https://www.icloud.com/keynote/010JUfnE6aCei9AuFDNTjTmvw#sc3204"
+                        target="_blank"
+                        >(실제 사용 예시)</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  페이지마다 반복해서 등장하나 구성이 달라지는 Top Navigation
+                  Bar를 구현하기 위해 Context API 활용,
+                  <code class="code-box">useTopNavSetter</code> Custom Hook 개발
+                </li>
+                <li>JSDoc을 적극적으로 활용해 개발 경험 향상</li>
+                <li>
+                  형태는 같으나 스타일만 다른 아이콘을 사용하기 위해 SVG 요소를
+                  활용
+                  <ul>
+                    <li>
+                      SVG 파일을 리액트 컴포넌트로 불러올 수 있도록 도와주는
+                      <code class="code-box">svgr</code> Webpack Loader 활용
+                    </li>
+                    <li>
+                      파일 import문을 자동으로 생성해주는 node script 작성
+                    </li>
+                    <li>
+                      SVG 컴포넌트들을 하나의 객체로 관리해 개발 편의성 향상
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
             <li class="my-7">
               <div class="title-with-time-wrapper">
                 <strong class="title-sec mb-1"
@@ -768,7 +892,7 @@
               </div>
               <p class="item-description font-light">서울시립대학교, 우수상</p>
             </li> -->
-            <!-- 개발과 관련 없는 수강 내역은 가리기 -->
+            <!-- 개발과 관련 없는 수상 내역은 가리기 -->
           </ul>
           <strong class="title-sec block print:break-before-page print:pt-5"
             >수강 내역</strong
@@ -786,6 +910,26 @@
                 >
               </div>
               <p class="item-description font-light">부트캠프</p>
+              <ul class="description-list description-list-small">
+                <li>
+                  회고조 조장, 팀프로젝트 팀장으로 활동하며 Soft Skill 발휘
+                </li>
+                <li>
+                  59명의 동료들에게 리액트로 투두 개발하기 특강 진행
+                  <a class="link" href="/img/지식나눔.png" target="_blank"
+                    >(스크린샷)</a
+                  >
+                </li>
+                <li>
+                  동료가 마주친 이슈를 함께 해결해나가는 "칭구칭긔들" 스터디
+                  리드<a
+                    class="link"
+                    href="https://likelion.notion.site/bde5b83036fd429395e3f3bf12731931?v=29fd6e1e5e5a4d5cbffbd1f041eef5c7"
+                    target="_blank"
+                    >(트러블슈팅 기록)</a
+                  >
+                </li>
+              </ul>
             </li>
             <li>
               <div class="title-with-time-wrapper">
