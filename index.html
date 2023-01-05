@@ -61,10 +61,10 @@
     <!-- prettier config를 이용해 자동으로 스타일 클래스의 순서가 정렬됩니다. -->
   </head>
   <body
-    class="bg-smokewhite bg-gradient-to-b from-blue-200 to-smokewhite bg-[length:100vw_80px] bg-no-repeat py-8"
+    class="bg-smokewhite bg-gradient-to-b from-blue-200 to-smokewhite bg-[length:100vw_80px] bg-no-repeat py-8 print:bg-none"
   >
     <div
-      class="m-auto mb-[50px] max-w-3xl text-textgray print:mb-0 print:max-w-[90%] content:mb-0"
+      class="m-auto mb-[50px] max-w-3xl text-textgray print:relative print:mb-0 print:max-w-[90%] content:mb-0"
     >
       <header class="mb-5 flex items-center p-5 print:mb-2">
         <img
@@ -155,29 +155,30 @@
               >(진행한 프로젝트 수)</span
             >
           </h2>
-          <div class="md:grid md:grid-cols-2 gap-x-4">
-            <div class="md:mb-0 my-7">
+
+          <div class="stack-grid">
+            <div class="stack-wrapper">
               <strong class="title-sec mb-3 block">Frontend</strong>
               <ul class="stack-badge-list-wrapper">
                 <li class="stack-badge stack-js">
                   JavaScript
-                  <div class="alarm-badge">6</div>
+                  <em class="alarm-badge">6</em>
                 </li>
                 <li class="stack-badge stack-ts">
                   TypeScript
-                  <div class="alarm-badge">4</div>
+                  <em class="alarm-badge">4</em>
                 </li>
                 <li class="stack-badge stack-react">
                   React.js
-                  <div class="alarm-badge">5</div>
+                  <em class="alarm-badge">5</em>
                 </li>
                 <li class="stack-badge stack-next">
                   Next.js
-                  <div class="alarm-badge">3</div>
+                  <em class="alarm-badge">3</em>
                 </li>
                 <li class="stack-badge stack-flutter">
                   Flutter
-                  <div class="alarm-badge">2</div>
+                  <em class="alarm-badge">2</em>
                 </li>
                 <li class="stack-badge stack-html">HTML</li>
                 <li class="stack-badge stack-css">CSS</li>
@@ -185,33 +186,33 @@
                 <li class="stack-badge stack-tailwind">Tailwind</li>
               </ul>
             </div>
-            <div class="md:mb-0 my-7">
+            <div class="stack-wrapper">
               <strong class="title-sec mb-3 block">Backend</strong>
               <ul class="stack-badge-list-wrapper">
                 <li class="stack-badge stack-django">
                   Django
-                  <div class="alarm-badge">2</div>
+                  <em class="alarm-badge">2</em>
                 </li>
                 <li class="stack-badge stack-node">
                   Node.js
-                  <div class="alarm-badge">2</div>
+                  <em class="alarm-badge">2</em>
                 </li>
                 <li class="stack-badge stack-firebase">
                   Firebase
-                  <div class="alarm-badge">3</div>
+                  <em class="alarm-badge">3</em>
                 </li>
               </ul>
             </div>
-            <div class="md:mt-5 my-7">
+            <div class="stack-wrapper">
               <strong class="title-sec mb-3 block">Database</strong>
               <ul class="stack-badge-list-wrapper">
                 <li class="stack-badge stack-postgres">
                   PostgreSQL
-                  <div class="alarm-badge">3</div>
+                  <em class="alarm-badge">3</em>
                 </li>
               </ul>
             </div>
-            <div class="md:mt-5 my-7">
+            <div class="stack-wrapper">
               <strong class="title-sec mb-3 block">ETC / Tools</strong>
               <ul class="stack-badge-list-wrapper">
                 <li class="stack-badge stack-figma">Figma</li>
@@ -219,603 +220,573 @@
                 <li class="stack-badge stack-git">Git/Github</li>
                 <li class="stack-badge stack-python">Python</li>
                 <!-- <li class="stack-badge stack-discord">Discord</li>
-                <li class="stack-badge stack-gather">Gather</li>
-                  -->
+                  <li class="stack-badge stack-gather">Gather</li>
+                    -->
               </ul>
             </div>
           </div>
         </section>
-        <section class="section-main">
+        <section class="section-main project">
           <h2 class="title-pri">프로젝트</h2>
-          <ul>
-            <li class="my-7">
-              <div class="title-with-time-wrapper">
-                <strong class="title-sec mb-1"
-                  >Snappy <em>4인 팀프로젝트 - FE 4인, 기여도 50%</em></strong
-                >
-                <time class="time time-ongoing" datetime="2022-12"
-                  >2022.12</time
-                >
-              </div>
-              <p class="mb-1 text-[0.95rem]">
+          <article class="my-7">
+            <header class="title-with-time-wrapper">
+              <h3 class="title-sec mb-1">
+                Snappy <em>4인 팀프로젝트 - FE 4인, 기여도 50%</em>
+              </h3>
+              <time class="time time-ongoing" datetime="2022-12">2022.12</time>
+            </header>
+            <p class="mb-1 text-[0.95rem]">
+              <a
+                class="link link-github link-separator"
+                href="https://github.com/likelion-devone/snappy"
+                target="_blank"
+                >Github</a
+              ><a
+                class="link link-separator"
+                href="https://www.icloud.com/keynote/010JUfnE6aCei9AuFDNTjTmvw"
+                target="_blank"
+                >발표 자료</a
+              ><a
+                class="link"
+                href="https://devone-snappy.vercel.app"
+                target="_blank"
+                >서비스 링크</a
+              >
+            </p>
+            <p class="item-description">
+              스냅 사진사와 이용자를 매칭하는 SNS 서비스입니다.
+            </p>
+            <strong class="sr-only">사용한 스택</strong>
+            <ul class="stack-badge-list-wrapper my-2">
+              <li class="stack-badge stack-react">React.js</li>
+              <li class="stack-badge stack-js">JavaScript</li>
+              <li class="stack-badge stack-styledcomponents">
+                styled-components
+              </li>
+              <li class="stack-badge stack-node">Node.js</li>
+            </ul>
+            <strong class="sr-only">성과</strong>
+            <ul class="description-list">
+              <li>
+                팀 리더로서 참여
+                <ul>
+                  <li>
+                    eslint, prettier, Live Share 등 다양한 툴을 활용해 코드 품질
+                    향상 도모
+                  </li>
+                  <li>
+                    Git-flow 활용, issue, commit message, PR 컨벤션 확립 등의
+                    방법으로 협업 효율화
+                  </li>
+                </ul>
+              </li>
+              <li>
+                Backend API 호출이 용이한
+                <code class="code-box">useAPI</code> Custom Hook 개발
                 <a
-                  class="link link-github link-separator"
-                  href="https://github.com/likelion-devone/snappy"
-                  target="_blank"
-                  >Github</a
-                ><a
-                  class="link link-separator"
-                  href="https://www.icloud.com/keynote/010JUfnE6aCei9AuFDNTjTmvw"
-                  target="_blank"
-                  >발표 자료</a
-                ><a
                   class="link"
-                  href="https://devone-snappy.vercel.app"
+                  href="https://www.icloud.com/keynote/010JUfnE6aCei9AuFDNTjTmvw#sc3326"
                   target="_blank"
-                  >서비스 링크</a
+                  >(실제 사용 예시)</a
                 >
-              </p>
-              <p class="item-description">
-                스냅 사진사와 이용자를 매칭하는 SNS 서비스입니다.
-              </p>
-              <strong class="sr-only">사용한 스택</strong>
-              <ul class="stack-badge-list-wrapper my-2">
-                <li class="stack-badge stack-react">React.js</li>
-                <li class="stack-badge stack-js">JavaScript</li>
-                <li class="stack-badge stack-styledcomponents">
-                  styled-components
-                </li>
-                <li class="stack-badge stack-node">Node.js</li>
-              </ul>
-              <strong class="sr-only">성과</strong>
-              <ul class="description-list">
-                <li>
-                  팀 리더로서 참여
-                  <ul>
-                    <li>
-                      eslint, prettier, Live Share 등 다양한 툴을 활용해 코드
-                      품질 향상 도모
-                    </li>
-                    <li>
-                      Git-flow 활용, issue, commit message, PR 컨벤션 확립 등의
-                      방법으로 협업 효율화
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  Backend API 호출이 용이한
-                  <code class="code-box">useAPI</code> Custom Hook 개발
-                  <a
-                    class="link"
-                    href="https://www.icloud.com/keynote/010JUfnE6aCei9AuFDNTjTmvw#sc3326"
-                    target="_blank"
-                    >(실제 사용 예시)</a
-                  >
-                  <ul>
-                    <li>
-                      서버와의 비동기 통신시 사용되는 반복되는 패턴을 공통
-                      훅으로 분리
-                    </li>
-                    <li>
-                      React State로서 응답과 에러를 헨들링할 수 있도록 개발
-                    </li>
-                    <li>
-                      API를 객체로 관리해 편리한 API 호출이 가능하게끔 설계
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  유연한 컴포넌트 설계를 위해 Compound Component 패턴 활용
-                  <ul>
-                    <li>
-                      로직은 Custom Hook 패턴으로 분리하는 등 유지보수가 용이한
-                      컴포넌트 디자인<a
-                        class="link"
-                        href="https://www.icloud.com/keynote/010JUfnE6aCei9AuFDNTjTmvw#sc3204"
-                        target="_blank"
-                        >(실제 사용 예시)</a
-                      >
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  페이지마다 반복해서 등장하나 구성이 달라지는 Top Navigation
-                  Bar를 구현하기 위해 Context API 활용,
-                  <code class="code-box">useTopNavSetter</code> Custom Hook 개발
-                </li>
-                <li>JSDoc을 적극적으로 활용해 개발 경험 향상</li>
-                <li>
-                  형태는 같으나 스타일만 다른 아이콘을 사용하기 위해 SVG 요소를
-                  활용
-                  <ul>
-                    <li>
-                      SVG 파일을 리액트 컴포넌트로 불러올 수 있도록 도와주는
-                      <code class="code-box">svgr</code> Webpack Loader 활용
-                    </li>
-                    <li>
-                      파일 import문을 자동으로 생성해주는 node script 작성
-                    </li>
-                    <li>
-                      SVG 컴포넌트들을 하나의 객체로 관리해 개발 편의성 향상
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-            <li class="my-7">
-              <div class="title-with-time-wrapper">
-                <strong class="title-sec mb-1"
-                  >Share it! <em>개인 프로젝트</em></strong
-                >
-                <time class="time" datetime="2022-11">2022.11</time>
-              </div>
-              <p class="mb-1 text-[0.95rem]">
+                <ul>
+                  <li>
+                    서버와의 비동기 통신시 사용되는 반복되는 패턴을 공통 훅으로
+                    분리
+                  </li>
+                  <li>React State로서 응답과 에러를 헨들링할 수 있도록 개발</li>
+                  <li>API를 객체로 관리해 편리한 API 호출이 가능하게끔 설계</li>
+                </ul>
+              </li>
+              <li>
+                유연한 컴포넌트 설계를 위해 Compound Component 패턴 활용
+                <ul>
+                  <li>
+                    로직은 Custom Hook 패턴으로 분리하는 등 유지보수가 용이한
+                    컴포넌트 디자인<a
+                      class="link"
+                      href="https://www.icloud.com/keynote/010JUfnE6aCei9AuFDNTjTmvw#sc3204"
+                      target="_blank"
+                      >(실제 사용 예시)</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li>
+                페이지마다 반복해서 등장하나 구성이 달라지는 Top Navigation
+                Bar를 구현하기 위해 Context API 활용,
+                <code class="code-box">useTopNavSetter</code> Custom Hook 개발
+              </li>
+              <li>JSDoc을 적극적으로 활용해 개발 경험 향상</li>
+              <li>
+                형태는 같으나 스타일만 다른 아이콘을 사용하기 위해 SVG 요소를
+                활용
+                <ul>
+                  <li>
+                    SVG 파일을 리액트 컴포넌트로 불러올 수 있도록 도와주는
+                    <code class="code-box">svgr</code> Webpack Loader 활용
+                  </li>
+                  <li>파일 import문을 자동으로 생성해주는 node script 작성</li>
+                  <li>
+                    SVG 컴포넌트들을 하나의 객체로 관리해 개발 편의성 향상
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </article>
+          <article class="my-7">
+            <header class="title-with-time-wrapper">
+              <h3 class="title-sec mb-1">Share it! <em>개인 프로젝트</em></h3>
+              <time class="time" datetime="2022-11">2022.11</time>
+            </header>
+            <p class="mb-1 text-[0.95rem]">
+              <a
+                class="link link-github link-separator"
+                href="https://github.com/custardcream98/share-it"
+                target="_blank"
+                >Github</a
+              ><a
+                class="link"
+                href="https://share-it-rust.vercel.app/"
+                target="_blank"
+                >서비스 링크</a
+              >
+            </p>
+            <p class="item-description">
+              코드를 서로 나눌 수 있도록 마크다운 입력이 가능한 커뮤니티입니다.
+            </p>
+            <strong class="sr-only">사용한 스택</strong>
+            <ul class="stack-badge-list-wrapper my-2">
+              <li class="stack-badge stack-react">React.js</li>
+              <li class="stack-badge stack-ts">TypeScript</li>
+              <li class="stack-badge stack-styledcomponents">
+                styled-components
+              </li>
+              <li class="stack-badge stack-node">Node.js</li>
+              <li class="stack-badge stack-firebase">Firebase</li>
+            </ul>
+            <strong class="sr-only">성과</strong>
+            <ul class="description-list">
+              <li>
+                <code class="code-box">node-mailer</code> 모듈을 활용해 댓글이
+                달릴 경우 글 작성자에게 메일을 보내는 API 개발
+              </li>
+              <li>
+                Code Splitting, 서브셋 폰트 등을 활용해 성능 최적화
                 <a
-                  class="link link-github link-separator"
-                  href="https://github.com/custardcream98/share-it"
-                  target="_blank"
-                  >Github</a
-                ><a
                   class="link"
-                  href="https://share-it-rust.vercel.app/"
+                  href="https://custardcream.vercel.app/posts/%EA%B0%9C%EC%9D%B8%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%20Share%20it!%EC%9D%98%20%EC%84%B1%EB%8A%A5%20%EC%B5%9C%EC%A0%81%ED%99%94%ED%95%98%EA%B8%B0"
                   target="_blank"
-                  >서비스 링크</a
+                  >(관련 포스트)</a
                 >
-              </p>
-              <p class="item-description">
-                코드를 서로 나눌 수 있도록 마크다운 입력이 가능한
-                커뮤니티입니다.
-              </p>
-              <strong class="sr-only">사용한 스택</strong>
-              <ul class="stack-badge-list-wrapper my-2">
-                <li class="stack-badge stack-react">React.js</li>
-                <li class="stack-badge stack-ts">TypeScript</li>
-                <li class="stack-badge stack-styledcomponents">
-                  styled-components
-                </li>
-                <li class="stack-badge stack-node">Node.js</li>
-                <li class="stack-badge stack-firebase">Firebase</li>
-              </ul>
-              <strong class="sr-only">성과</strong>
-              <ul class="description-list">
-                <li>
-                  <code class="code-box">node-mailer</code> 모듈을 활용해 댓글이
-                  달릴 경우 글 작성자에게 메일을 보내는 API 개발
-                </li>
-                <li>
-                  Code Splitting, 서브셋 폰트 등을 활용해 성능 최적화
-                  <a
-                    class="link"
-                    href="https://custardcream.vercel.app/posts/%EA%B0%9C%EC%9D%B8%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%20Share%20it!%EC%9D%98%20%EC%84%B1%EB%8A%A5%20%EC%B5%9C%EC%A0%81%ED%99%94%ED%95%98%EA%B8%B0"
-                    target="_blank"
-                    >(관련 포스트)</a
-                  >
-                  <ul>
-                    <li>Lighthouse 기준 성능 점수 82점에서 91점으로 향상</li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-            <li class="my-7">
-              <div class="title-with-time-wrapper">
-                <strong class="title-sec mb-1"
-                  >기술 블로그 <em>개인 프로젝트</em></strong
-                >
-                <time class="time time-ongoing" datetime="2022-08"
-                  >2022.08</time
-                >
-              </div>
-              <p class="mb-1 text-[0.95rem]">
+                <ul>
+                  <li>Lighthouse 기준 성능 점수 82점에서 91점으로 향상</li>
+                </ul>
+              </li>
+            </ul>
+          </article>
+          <article class="my-7">
+            <header class="title-with-time-wrapper">
+              <h3 class="title-sec mb-1">기술 블로그 <em>개인 프로젝트</em></h3>
+              <time class="time time-ongoing" datetime="2022-08">2022.08</time>
+            </header>
+            <p class="mb-1 text-[0.95rem]">
+              <a
+                class="link link-github link-separator"
+                href="https://github.com/custardcream98/blog-from-beginning-to-end"
+                target="_blank"
+                >Github</a
+              ><a
+                class="link"
+                href="https://custardcream.vercel.app/"
+                target="_blank"
+                >블로그 링크</a
+              >
+            </p>
+            <p>하나부터 열까지 직접 개발하는 기술 블로그입니다.</p>
+            <strong class="sr-only">사용한 스택</strong>
+            <ul class="stack-badge-list-wrapper my-2">
+              <li class="stack-badge stack-next">Next.js</li>
+              <li class="stack-badge stack-ts">TypeScript</li>
+              <li class="stack-badge stack-styledcomponents">
+                styled-components
+              </li>
+              <li class="stack-badge stack-node">Node.js</li>
+              <li class="stack-badge stack-firebase">Firebase</li>
+            </ul>
+            <strong class="sr-only">성과</strong>
+            <ul class="description-list">
+              <li>
+                빌드 후 바뀔 필요가 없는 점을 감안해,
+                <code class="code-box">remark</code> 를 활용 Markdown으로 작성한
+                포스팅을 정적 웹사이트로 빌드 (Static Site Generation)
+              </li>
+              <li>카테고리별 분류, 태그별 분류 구현</li>
+              <li>
+                SEO를 고려한 시멘틱 웹 개발
+                <ul>
+                  <li>Google 총 노출 수 1330회, 평균 게재순위 19.9위</li>
+                </ul>
+              </li>
+              <li>Firebase 활용해 방문자 수, 좋아요 카운터, 댓글란 개발</li>
+              <li>
+                Express.js를 활용해 Thumbnail과 Open Graph Image 생성 자동화
+              </li>
+              <li>
+                블로그 내 게시물 검색용 엔드포인트 구현 및 debouncing 기법
+                활용해 API Call 최적화
                 <a
-                  class="link link-github link-separator"
-                  href="https://github.com/custardcream98/blog-from-beginning-to-end"
-                  target="_blank"
-                  >Github</a
-                ><a
                   class="link"
-                  href="https://custardcream.vercel.app/"
+                  href="https://custardcream.vercel.app/posts/%EB%B8%94%EB%A1%9C%EA%B7%B8%EC%97%90%20%EA%B2%80%EC%83%89%20%EA%B8%B0%EB%8A%A5%EC%9D%84%20%EA%B5%AC%ED%98%84%ED%95%B4%EB%B3%B4%EC%9E%90%202"
                   target="_blank"
-                  >블로그 링크</a
+                  >(관련 포스트)</a
                 >
-              </p>
-              <p>하나부터 열까지 직접 개발하는 기술 블로그입니다.</p>
-              <strong class="sr-only">사용한 스택</strong>
-              <ul class="stack-badge-list-wrapper my-2">
-                <li class="stack-badge stack-next">Next.js</li>
-                <li class="stack-badge stack-ts">TypeScript</li>
-                <li class="stack-badge stack-styledcomponents">
-                  styled-components
-                </li>
-                <li class="stack-badge stack-node">Node.js</li>
-                <li class="stack-badge stack-firebase">Firebase</li>
-              </ul>
-              <strong class="sr-only">성과</strong>
-              <ul class="description-list">
-                <li>
-                  빌드 후 바뀔 필요가 없는 점을 감안해,
-                  <code class="code-box">remark</code> 를 활용 Markdown으로
-                  작성한 포스팅을 정적 웹사이트로 빌드 (Static Site Generation)
-                </li>
-                <li>카테고리별 분류, 태그별 분류 구현</li>
-                <li>
-                  SEO를 고려한 시멘틱 웹 개발
-                  <ul>
-                    <li>Google 총 노출 수 1330회, 평균 게재순위 19.9위</li>
-                  </ul>
-                </li>
-                <li>Firebase 활용해 방문자 수, 좋아요 카운터, 댓글란 개발</li>
-                <li>
-                  Express.js를 활용해 Thumbnail과 Open Graph Image 생성 자동화
-                </li>
-                <li>
-                  블로그 내 게시물 검색용 엔드포인트 구현 및 debouncing 기법
-                  활용해 API Call 최적화
-                  <a
-                    class="link"
-                    href="https://custardcream.vercel.app/posts/%EB%B8%94%EB%A1%9C%EA%B7%B8%EC%97%90%20%EA%B2%80%EC%83%89%20%EA%B8%B0%EB%8A%A5%EC%9D%84%20%EA%B5%AC%ED%98%84%ED%95%B4%EB%B3%B4%EC%9E%90%202"
-                    target="_blank"
-                    >(관련 포스트)</a
-                  >
-                </li>
-              </ul>
-            </li>
-            <li id="good-rider" class="my-7 print:break-before-page">
-              <div class="title-with-time-wrapper">
-                <strong class="title-sec mb-1"
-                  >착한 이륜차 운전자 평가 모델 개발용 설문 폼 개발
-                  <em
-                    >개인 프로젝트 - 서울시립대학교 공간 데이터베이스 연구실
-                    연구과제</em
-                  ></strong
+              </li>
+            </ul>
+          </article>
+          <article id="good-rider" class="my-7">
+            <header class="title-with-time-wrapper">
+              <h3 class="title-sec mb-1">
+                착한 이륜차 운전자 평가 모델 개발용 설문 폼 개발
+                <em
+                  >개인 프로젝트 - 서울시립대학교 공간 데이터베이스 연구실
+                  연구과제</em
                 >
-                <span class="time">
-                  <time class="time-ongoing" datetime="2022-01">2022.06</time
-                  ><time datetime="2022-05">2022.10</time></span
+              </h3>
+              <span class="time">
+                <time class="time-ongoing" datetime="2022-01">2022.06</time
+                ><time datetime="2022-05">2022.10</time></span
+              >
+            </header>
+            <p class="mb-1 text-[0.95rem]">
+              <a
+                class="link link-github link-separator"
+                href="https://github.com/custardcream98/goodrider-interview-web"
+                target="_blank"
+                >Github</a
+              ><a
+                class="link"
+                href="https://goodrider-interview-web.vercel.app/"
+                target="_blank"
+                >설문지 링크</a
+              >
+            </p>
+            <p class="item-description">
+              AHP 분석법에 기반해 사용자가 슬라이더를 움직이면 실시간으로
+              유효성을 검증하는 복잡한 로직의 웹 설문지를 개발했습니다.
+            </p>
+            <strong class="sr-only">사용한 스택</strong>
+            <ul class="stack-badge-list-wrapper my-2">
+              <li class="stack-badge stack-next">Next.js</li>
+              <li class="stack-badge stack-ts">TypeScript</li>
+              <li class="stack-badge stack-recoil">Recoil</li>
+              <li class="stack-badge stack-tailwind">Tailwind</li>
+            </ul>
+            <strong class="sr-only">성과</strong>
+            <ul class="description-list">
+              <li>
+                Python으로 개발된 유효성 검증 로직을 TypeScript로 마이그레이션
+                <ul>
+                  <li>
+                    비효율적인 로직 개선 및 리팩토링 병행
+                    <a
+                      class="link"
+                      href="https://custardcream.vercel.app/posts/%EB%B3%B5%EC%9E%A1%ED%95%98%EA%B2%8C%20%EA%B5%AC%EC%84%B1%EB%90%9C%20if%EB%AC%B8%20%EB%A6%AC%ED%8C%A9%ED%86%A0%EB%A7%81%ED%95%98%EA%B8%B0"
+                      target="_blank"
+                      >(관련 포스트)</a
+                    >
+                  </li>
+                  <li>
+                    복잡한 로직의 동작 확인을 위해
+                    <code class="code-box">Cypress</code> 활용해 테스트 코드
+                    작성
+                  </li>
+                </ul>
+              </li>
+              <li>
+                사용자가 슬라이더를 움직일 때마다 실시간 유효성 검증 구현을 위해
+                <code class="code-box">recoil</code> 사용
+                <ul>
+                  <li>
+                    <code class="code-box">selector</code> 를 활용해 검증 계산의
+                    결과를 여러 컴포넌트에서 구독할 수 있도록 개발
+                  </li>
+                  <li>
+                    모든 문제의 유효성이 통과되었는지 여부를 확인하고, 통과하지
+                    못한 문제는 Global Navigation Bar에서 확인 가능하도록
+                    상태관리 플로우 구축
+                  </li>
+                </ul>
+              </li>
+              <li>
+                유저가 설문 도중 중단하더라도 돌아왔을 때 다시 임할 수 있도록
+                <code class="code-box">localStorage</code> 활용
+                <ul>
+                  <li>
+                    <code class="code-box">localStorage</code>와
+                    <code class="code-box">recoil</code>에서 관리하고 있는
+                    상태의 값이 항상 동일하도록 개발
+                  </li>
+                </ul>
+              </li>
+              <li>Backend 엔드포인트 명세 설계</li>
+            </ul>
+          </article>
+          <article class="my-7">
+            <header class="title-with-time-wrapper">
+              <h3 class="title-sec mb-1">
+                금연 타이머 Smoquit <em>개인 프로젝트</em>
+              </h3>
+              <time class="time" datetime="2022-07">2022.07</time>
+            </header>
+            <p class="mb-1 text-[0.95rem]">
+              <a
+                class="link link-github link-separator"
+                href="https://github.com/custardcream98/smoquit"
+                target="_blank"
+                >Github</a
+              ><a
+                class="link"
+                href="https://custardcream98.github.io/smoquit/"
+                target="_blank"
+                >서비스 링크</a
+              >
+            </p>
+            <p class="item-description">
+              금연을 도전하는 사람들에게 담배를 끊어 얻게된 이득을 실시간으로
+              보여줘 금연에 대한 동기를 부여해주는 Web App입니다.
+            </p>
+            <strong class="sr-only">사용한 스택</strong>
+            <ul class="stack-badge-list-wrapper my-2">
+              <li class="stack-badge stack-react">React.js</li>
+              <li class="stack-badge stack-redux">Redux</li>
+              <li class="stack-badge stack-bootstrap">Bootstrap</li>
+              <li class="stack-badge stack-firebase">Firebase</li>
+            </ul>
+            <strong class="sr-only">성과</strong>
+            <ul class="description-list">
+              <li>
+                금연 도전 시작 때부터 얼마나 이익을 얻었는지 실시간으로 보여주는
+                카운터 개발
+              </li>
+              <li>
+                24시간마다 출석해야 금연 도전이 인정되도록 하는 출석체크 기능
+                구현
+              </li>
+              <li>다른 사용자와 경쟁할 수 있는 리더보드 개발</li>
+              <li>지금까지의 도전 내역을 볼 수 있는 도전내역 페이지 개발</li>
+              <li>
+                <code class="code-box">React.lazy()</code>를 활용해 레이지 로딩
+                구현
+              </li>
+              <li>
+                <code class="code-box">React.Suspense</code>를 활용해 loading
+                indicator 구현
+              </li>
+            </ul>
+          </article>
+          <article id="dayplanit" class="my-7">
+            <header class="title-with-time-wrapper">
+              <h3 class="title-sec mb-1">Dayplan.it <em>2인 팀프로젝트</em></h3>
+              <span class="time">
+                <time class="time-ongoing" datetime="2022-01">2022.01</time
+                ><time datetime="2022-05">2022.05</time></span
+              >
+            </header>
+            <p class="mb-1 text-[0.95rem]">
+              <a
+                class="link link-github link-separator"
+                href="https://github.com/Dayplan-it/Dayplan.it"
+                target="_blank"
+                >Github</a
+              ><a
+                class="link"
+                href="https://uos-urbanscience.org/archives/uos_portfolio/%eb%8f%99%ec%84%a0%ec%9d%84-%ea%b3%a0%eb%a0%a4%ed%95%9c-all-in-one-%ec%9d%bc%ec%a0%95-%ec%8a%a4%ec%bc%80%ec%a4%84%eb%a7%81-%ec%84%9c%eb%b9%84%ec%8a%a4"
+                target="_blank"
+                >작품 설명</a
+              >
+            </p>
+            <p class="item-description">
+              경로 기반 일정 관리 크로스플랫폼 어플리케이션입니다.
+            </p>
+            <strong class="sr-only">사용한 스택</strong>
+            <ul class="stack-badge-list-wrapper my-2">
+              <li class="stack-badge stack-flutter">Flutter</li>
+              <li class="stack-badge stack-django">Django</li>
+              <li class="stack-badge stack-postgres">PostgreSQL</li>
+              <li class="stack-badge stack-aws">AWS</li>
+            </ul>
+            <strong class="sr-only">성과</strong>
+            <ul class="description-list">
+              <li>도시과학대학장상 수상</li>
+              <li>풀스택 개발</li>
+              <li>
+                순서와 경로가 담긴 스케줄 데이터를 효율적으로 다루기 위해
+                Frontend / Backend 양측에서 Serializer, Deserializer 개발
+              </li>
+              <li>
+                직관적인 일정 관리를 위해, 스크롤이 가능한 수직 타임라인에
+                드래그 앤 드롭으로 일정 블록의 순서를 바꾸거나 삭제하고, 길게
+                누르며 드래그해 일정 블록의 지속 시간을 변경할 수 있는 위젯을
+                구현
+                <ul>
+                  <li>
+                    스케줄의 종류, 장소, 순서, 시각, 시간이 자유자재로 바뀔 수
+                    있도록 로직을 설계
+                  </li>
+                  <li>
+                    타임라인을 벗어나거나 최소 스케줄 시간은 넘도록 하는 등
+                    다양한 상황을 고려해 예외처리
+                  </li>
+                </ul>
+              </li>
+              <li>
+                Django Rest Framework를 사용해 8개의 엔드포인트를 가진 RESTful
+                API를 구현
+              </li>
+              <li>
+                순서가 있는 공간 데이터를 효과적으로 다룰 수 있도록 DB 설계
+              </li>
+              <li>효율적인 팀워크를 위해 Git-flow 기반의 워크플로우를 활용</li>
+            </ul>
+          </article>
+          <article class="my-7">
+            <header class="title-with-time-wrapper">
+              <h3 class="title-sec mb-1">
+                카카오톡, 디스코드 챗봇 <em>개인 프로젝트</em>
+              </h3>
+              <time class="time time-ongoing" datetime="2021-06">2021.06</time>
+            </header>
+            <p class="mb-1 text-[0.95rem]">
+              <a
+                class="link link-separator link-nomargin"
+                href="https://blog.naver.com/sg05098/222596637921"
+                target="_blank"
+                >기능 설명</a
+              >
+              <a
+                class="link link-nomargin"
+                href="https://open.kakao.com/o/s9uGYgPd"
+                target="_blank"
+                >봇 카카오톡 오픈프로필</a
+              >
+            </p>
+            <p class="item-description">
+              코인 가격 조회, NFT 가격 조회 등 20 ~ 30가지의 블록체인 투자 관련
+              기능을 가진 카카오톡 봇과, 커뮤니티 관리 기능을 탑재한 디스코드
+              봇입니다.
+            </p>
+            <strong class="sr-only">사용한 스택</strong>
+            <ul class="stack-badge-list-wrapper my-2">
+              <li class="stack-badge stack-node">Node.js</li>
+            </ul>
+            <strong class="sr-only">성과</strong>
+            <ul class="description-list">
+              <li>
+                카카오톡 봇 실 사용자 약 500여 명 (서비스중)
+                <ul>
+                  <li>코인 초성검색/이름검색 구현</li>
+                  <li>
+                    UPBit, Binance, Gate.io, Bithumb 등 각 거래소별로 상이한
+                    Open API 사용에 맞춰 쿼리 및 데이터 파싱
+                  </li>
+                  <li>
+                    JSON 파일을 활용해 로컬 데이터베이스 구축, 사용자가 직접
+                    특정 NFT의 한글명을 등록할 수 있도록 기능 구현
+                  </li>
+                </ul>
+              </li>
+              <li>NFT 프로젝트 커뮤니티 관리를 위한 이벤트 봇 개발</li>
+              <li>
+                NFT 정보 검색 및 보유중인 NFT를 한눈에 볼 수 있는 ‘가족사진’
+                기능 개발
+                <ul>
+                  <li>약 2800여 명의 사용자가 있는 NFT 프로젝트에서 실사용</li>
+                </ul>
+              </li>
+            </ul>
+          </article>
+          <article id="inchon" class="my-7">
+            <header class="title-with-time-wrapper">
+              <h3 class="title-sec mb-1">
+                인천시 생활폐기물 발생량 분석 및 예측 모델 개발
+                <em
+                  >4인 팀프로젝트 - 서울시립대학교 공간 데이터베이스 연구실
+                  연구과제</em
                 >
-              </div>
-              <p class="mb-1 text-[0.95rem]">
-                <a
-                  class="link link-github link-separator"
-                  href="https://github.com/custardcream98/goodrider-interview-web"
-                  target="_blank"
-                  >Github</a
-                ><a
-                  class="link"
-                  href="https://goodrider-interview-web.vercel.app/"
-                  target="_blank"
-                  >설문지 링크</a
-                >
-              </p>
-              <p class="item-description">
-                AHP 분석법에 기반해 사용자가 슬라이더를 움직이면 실시간으로
-                유효성을 검증하는 복잡한 로직의 웹 설문지를 개발했습니다.
-              </p>
-              <strong class="sr-only">사용한 스택</strong>
-              <ul class="stack-badge-list-wrapper my-2">
-                <li class="stack-badge stack-next">Next.js</li>
-                <li class="stack-badge stack-ts">TypeScript</li>
-                <li class="stack-badge stack-recoil">Recoil</li>
-                <li class="stack-badge stack-tailwind">Tailwind</li>
-              </ul>
-              <strong class="sr-only">성과</strong>
-              <ul class="description-list">
-                <li>
-                  Python으로 개발된 유효성 검증 로직을 TypeScript로 마이그레이션
-                  <ul>
-                    <li>
-                      비효율적인 로직 개선 및 리팩토링 병행
-                      <a
-                        class="link"
-                        href="https://custardcream.vercel.app/posts/%EB%B3%B5%EC%9E%A1%ED%95%98%EA%B2%8C%20%EA%B5%AC%EC%84%B1%EB%90%9C%20if%EB%AC%B8%20%EB%A6%AC%ED%8C%A9%ED%86%A0%EB%A7%81%ED%95%98%EA%B8%B0"
-                        target="_blank"
-                        >(관련 포스트)</a
-                      >
-                    </li>
-                    <li>
-                      복잡한 로직의 동작 확인을 위해
-                      <code class="code-box">Cypress</code> 활용해 테스트 코드
-                      작성
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  사용자가 슬라이더를 움직일 때마다 실시간 유효성 검증 구현을
-                  위해 <code class="code-box">recoil</code> 사용
-                  <ul>
-                    <li>
-                      <code class="code-box">selector</code> 를 활용해 검증
-                      계산의 결과를 여러 컴포넌트에서 구독할 수 있도록 개발
-                    </li>
-                    <li>
-                      모든 문제의 유효성이 통과되었는지 여부를 확인하고,
-                      통과하지 못한 문제는 Global Navigation Bar에서 확인
-                      가능하도록 상태관리 플로우 구축
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  유저가 설문 도중 중단하더라도 돌아왔을 때 다시 임할 수 있도록
-                  <code class="code-box">localStorage</code> 활용
-                  <ul>
-                    <li>
-                      <code class="code-box">localStorage</code>와
-                      <code class="code-box">recoil</code>에서 관리하고 있는
-                      상태의 값이 항상 동일하도록 개발
-                    </li>
-                  </ul>
-                </li>
-                <li>Backend 엔드포인트 명세 설계</li>
-              </ul>
-            </li>
-            <li class="my-7">
-              <div class="title-with-time-wrapper">
-                <strong class="title-sec mb-1"
-                  >금연 타이머 Smoquit <em>개인 프로젝트</em>
-                </strong>
-                <time class="time" datetime="2022-07">2022.07</time>
-              </div>
-              <p class="mb-1 text-[0.95rem]">
-                <a
-                  class="link link-github link-separator"
-                  href="https://github.com/custardcream98/smoquit"
-                  target="_blank"
-                  >Github</a
-                ><a
-                  class="link"
-                  href="https://custardcream98.github.io/smoquit/"
-                  target="_blank"
-                  >서비스 링크</a
-                >
-              </p>
-              <p class="item-description">
-                금연을 도전하는 사람들에게 담배를 끊어 얻게된 이득을 실시간으로
-                보여줘 금연에 대한 동기를 부여해주는 Web App입니다.
-              </p>
-              <strong class="sr-only">사용한 스택</strong>
-              <ul class="stack-badge-list-wrapper my-2">
-                <li class="stack-badge stack-react">React.js</li>
-                <li class="stack-badge stack-redux">Redux</li>
-                <li class="stack-badge stack-bootstrap">Bootstrap</li>
-                <li class="stack-badge stack-firebase">Firebase</li>
-              </ul>
-              <strong class="sr-only">성과</strong>
-              <ul class="description-list">
-                <li>
-                  금연 도전 시작 때부터 얼마나 이익을 얻었는지 실시간으로
-                  보여주는 카운터 개발
-                </li>
-                <li>
-                  24시간마다 출석해야 금연 도전이 인정되도록 하는 출석체크 기능
-                  구현
-                </li>
-                <li>다른 사용자와 경쟁할 수 있는 리더보드 개발</li>
-                <li>지금까지의 도전 내역을 볼 수 있는 도전내역 페이지 개발</li>
-                <li>
-                  <code class="code-box">React.lazy()</code>를 활용해 레이지
-                  로딩 구현
-                </li>
-                <li>
-                  <code class="code-box">React.Suspense</code>를 활용해 loading
-                  indicator 구현
-                </li>
-              </ul>
-            </li>
-            <li id="dayplanit" class="my-7">
-              <div class="title-with-time-wrapper">
-                <strong class="title-sec mb-1"
-                  >Dayplan.it <em>2인 팀프로젝트</em></strong
-                >
-                <span class="time">
-                  <time class="time-ongoing" datetime="2022-01">2022.01</time
-                  ><time datetime="2022-05">2022.05</time></span
-                >
-              </div>
-              <p class="mb-1 text-[0.95rem]">
-                <a
-                  class="link link-github link-separator"
-                  href="https://github.com/Dayplan-it/Dayplan.it"
-                  target="_blank"
-                  >Github</a
-                ><a
-                  class="link"
-                  href="https://uos-urbanscience.org/archives/uos_portfolio/%eb%8f%99%ec%84%a0%ec%9d%84-%ea%b3%a0%eb%a0%a4%ed%95%9c-all-in-one-%ec%9d%bc%ec%a0%95-%ec%8a%a4%ec%bc%80%ec%a4%84%eb%a7%81-%ec%84%9c%eb%b9%84%ec%8a%a4"
-                  target="_blank"
-                  >작품 설명</a
-                >
-              </p>
-              <p class="item-description">
-                경로 기반 일정 관리 크로스플랫폼 어플리케이션입니다.
-              </p>
-              <strong class="sr-only">사용한 스택</strong>
-              <ul class="stack-badge-list-wrapper my-2">
-                <li class="stack-badge stack-flutter">Flutter</li>
-                <li class="stack-badge stack-django">Django</li>
-                <li class="stack-badge stack-postgres">PostgreSQL</li>
-                <li class="stack-badge stack-aws">AWS</li>
-              </ul>
-              <strong class="sr-only">성과</strong>
-              <ul class="description-list">
-                <li>도시과학대학장상 수상</li>
-                <li>풀스택 개발</li>
-                <li>
-                  순서와 경로가 담긴 스케줄 데이터를 효율적으로 다루기 위해
-                  Frontend / Backend 양측에서 Serializer, Deserializer 개발
-                </li>
-                <li>
-                  직관적인 일정 관리를 위해, 스크롤이 가능한 수직 타임라인에
-                  드래그 앤 드롭으로 일정 블록의 순서를 바꾸거나 삭제하고, 길게
-                  누르며 드래그해 일정 블록의 지속 시간을 변경할 수 있는 위젯을
-                  구현
-                  <ul>
-                    <li>
-                      스케줄의 종류, 장소, 순서, 시각, 시간이 자유자재로 바뀔 수
-                      있도록 로직을 설계
-                    </li>
-                    <li>
-                      타임라인을 벗어나거나 최소 스케줄 시간은 넘도록 하는 등
-                      다양한 상황을 고려해 예외처리
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  Django Rest Framework를 사용해 8개의 엔드포인트를 가진 RESTful
-                  API를 구현
-                </li>
-                <li>
-                  순서가 있는 공간 데이터를 효과적으로 다룰 수 있도록 DB 설계
-                </li>
-                <li>
-                  효율적인 팀워크를 위해 Git-flow 기반의 워크플로우를 활용
-                </li>
-              </ul>
-            </li>
-            <li class="my-7">
-              <div class="title-with-time-wrapper">
-                <strong class="title-sec mb-1"
-                  >카카오톡, 디스코드 챗봇 <em>개인 프로젝트</em></strong
-                >
-                <time class="time time-ongoing" datetime="2021-06"
-                  >2021.06</time
-                >
-              </div>
-              <p class="mb-1 text-[0.95rem]">
-                <a
-                  class="link link-separator link-nomargin"
-                  href="https://blog.naver.com/sg05098/222596637921"
-                  target="_blank"
-                  >기능 설명</a
-                >
-                <a
-                  class="link link-nomargin"
-                  href="https://open.kakao.com/o/s9uGYgPd"
-                  target="_blank"
-                  >봇 카카오톡 오픈프로필</a
-                >
-              </p>
-              <p class="item-description">
-                코인 가격 조회, NFT 가격 조회 등 20 ~ 30가지의 블록체인 투자
-                관련 기능을 가진 카카오톡 봇과, 커뮤니티 관리 기능을 탑재한
-                디스코드 봇입니다.
-              </p>
-              <strong class="sr-only">사용한 스택</strong>
-              <ul class="stack-badge-list-wrapper my-2">
-                <li class="stack-badge stack-node">Node.js</li>
-              </ul>
-              <strong class="sr-only">성과</strong>
-              <ul class="description-list">
-                <li>
-                  카카오톡 봇 실 사용자 약 500여 명 (서비스중)
-                  <ul>
-                    <li>코인 초성검색/이름검색 구현</li>
-                    <li>
-                      UPBit, Binance, Gate.io, Bithumb 등 각 거래소별로 상이한
-                      Open API 사용에 맞춰 쿼리 및 데이터 파싱
-                    </li>
-                    <li>
-                      JSON 파일을 활용해 로컬 데이터베이스 구축, 사용자가 직접
-                      특정 NFT의 한글명을 등록할 수 있도록 기능 구현
-                    </li>
-                  </ul>
-                </li>
-                <li>NFT 프로젝트 커뮤니티 관리를 위한 이벤트 봇 개발</li>
-                <li>
-                  NFT 정보 검색 및 보유중인 NFT를 한눈에 볼 수 있는 ‘가족사진’
-                  기능 개발
-                  <ul>
-                    <li>
-                      약 2800여 명의 사용자가 있는 NFT 프로젝트에서 실사용
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-            <li id="inchon" class="my-7 print:break-before-page">
-              <div class="title-with-time-wrapper">
-                <strong class="title-sec mb-1"
-                  >인천시 생활폐기물 발생량 분석 및 예측 모델 개발
-                  <em
-                    >4인 팀프로젝트 - 서울시립대학교 공간 데이터베이스 연구실
-                    연구과제</em
-                  ></strong
-                >
-                <span class="time">
-                  <time class="time-ongoing" datetime="2021-06">2021.06</time
-                  ><time datetime="2021-12">2021.12</time></span
-                >
-              </div>
-              <p class="item-description">
-                인천시 각 구에서 수집하는 생활폐기물 수거 기록과 카드 사용
-                데이터, 택배 데이터, 통신사 유동인구 데이터 등을 활용해
-                생활폐기물 발생량을 분석했습니다.
-              </p>
-              <strong class="sr-only">사용한 스택</strong>
-              <ul class="stack-badge-list-wrapper my-2">
-                <li class="stack-badge stack-python">Python</li>
-                <li class="stack-badge stack-postgres">PostgreSQL</li>
-              </ul>
-              <strong class="sr-only">성과</strong>
-              <ul class="description-list">
-                <li>
-                  인천시 내의 각 구에서 보내주는 Raw Data의 형식에 일관성이 없고
-                  품질이 매우 낮아 Python과 C# ASP.NET 등으로 자동화 프로그램
-                  개발, 200GB의 텍스트 및 공간 데이터 수집
-                </li>
-                <li>PostgreSQL을 활용해 분석용 데이터를 DB화</li>
-                <li>
-                  GIS, Python 등을 이용해 데이터를 시각화하고 데이터의 특성을
-                  파악
-                </li>
-              </ul>
-            </li>
-          </ul>
+              </h3>
+              <span class="time">
+                <time class="time-ongoing" datetime="2021-06">2021.06</time
+                ><time datetime="2021-12">2021.12</time></span
+              >
+            </header>
+            <p class="item-description">
+              인천시 각 구에서 수집하는 생활폐기물 수거 기록과 카드 사용 데이터,
+              택배 데이터, 통신사 유동인구 데이터 등을 활용해 생활폐기물
+              발생량을 분석했습니다.
+            </p>
+            <strong class="sr-only">사용한 스택</strong>
+            <ul class="stack-badge-list-wrapper my-2">
+              <li class="stack-badge stack-python">Python</li>
+              <li class="stack-badge stack-postgres">PostgreSQL</li>
+            </ul>
+            <strong class="sr-only">성과</strong>
+            <ul class="description-list">
+              <li>
+                인천시 내의 각 구에서 보내주는 Raw Data의 형식에 일관성이 없고
+                품질이 매우 낮아 Python과 C# ASP.NET 등으로 자동화 프로그램
+                개발, 200GB의 텍스트 및 공간 데이터 수집
+              </li>
+              <li>PostgreSQL을 활용해 분석용 데이터를 DB화</li>
+              <li>
+                GIS, Python 등을 이용해 데이터를 시각화하고 데이터의 특성을 파악
+              </li>
+            </ul>
+          </article>
         </section>
         <section class="section-main">
           <h2 class="title-pri">이력</h2>
-          <ul>
-            <li class="my-7">
-              <div class="title-with-time-wrapper">
-                <strong class="title-sec mb-1">학부생 연구원</strong>
-                <time class="time time-ongoing" datetime="2021-06"
-                  >2021.06</time
+          <article class="my-7">
+            <header class="title-with-time-wrapper">
+              <h3 class="title-sec mb-1">학부생 연구원</h3>
+              <time class="time time-ongoing" datetime="2021-06">2021.06</time>
+            </header>
+            <p class="item-description">
+              서울시립대학교 공간 데이터베이스 연구실
+            </p>
+            <strong class="mt-3 mb-1 block">업무</strong>
+            <ul class="description-list">
+              <li>Web Developer</li>
+              <li>데이터 정제, 관리, 수집, 분석 및 가공</li>
+              <li>공간 데이터베이스 설계 및 구축</li>
+            </ul>
+            <strong class="mt-3 mb-1 block">진행한 프로젝트</strong>
+            <ul class="description-list">
+              <li>
+                <a class="link link-nomargin" href="#inchon"
+                  >인천시 생활폐기물 발생량 분석 및 예측 모델 개발 연구</a
                 >
-              </div>
-              <p class="item-description">
-                서울시립대학교 공간 데이터베이스 연구실
-              </p>
-              <strong class="mt-3 mb-1 block">업무</strong>
-              <ul class="description-list">
-                <li>Web Developer</li>
-                <li>데이터 정제, 관리, 수집, 분석 및 가공</li>
-                <li>공간 데이터베이스 설계 및 구축</li>
-              </ul>
-              <strong class="mt-3 mb-1 block">진행한 프로젝트</strong>
-              <ul class="description-list">
-                <li>
-                  <a class="link link-nomargin" href="#inchon"
-                    >인천시 생활폐기물 발생량 분석 및 예측 모델 개발 연구</a
-                  >
-                </li>
-                <li>
-                  <a class="link link-nomargin" href="#good-rider"
-                    >착한 이륜차 운전자 평가 시스템 개발 연구</a
-                  >
-                </li>
-              </ul>
-            </li>
-          </ul>
+              </li>
+              <li>
+                <a class="link link-nomargin" href="#good-rider"
+                  >착한 이륜차 운전자 평가 시스템 개발 연구</a
+                >
+              </li>
+            </ul>
+          </article>
         </section>
-        <section class="section-main">
+        <section class="section-main print:border-t-0">
           <h2 class="title-pri">기타</h2>
-          <div class="my-7">
-            <div class="title-with-time-wrapper">
-              <strong class="title-sec mb-1"
-                >Google Developer Student Clubs
+          <article class="my-7">
+            <header class="title-with-time-wrapper">
+              <h3 class="title-sec mb-1">
+                Google Developer Student Clubs
                 <abbr class="underline-offset-4" title="University Of Seoul"
                   >UOS</abbr
-                ></strong
-              >
+                >
+              </h3>
               <time class="time time-ongoing" datetime="2022-03">2022.03</time>
-            </div>
+            </header>
             <p class="item-description">Core Member</p>
             <strong class="mt-3 mb-1 block">맡은 역할</strong>
             <ul class="description-list">
@@ -833,135 +804,139 @@
                 Scrum, Sprint 회고, Kick Off, CPU Meeting 등을 주도
               </li>
             </ul>
-          </div>
-          <strong class="title-sec mt-7 block">자격증</strong>
-          <ul class="item-list">
-            <li>
-              <div class="title-with-time-wrapper">
-                <strong>SQLD (국가 공인 SQL 개발자)</strong>
-                <time class="time" datetime="2021-10">2021.10</time>
-              </div>
-              <p class="item-description font-light">한국데이터산업진흥원</p>
-            </li>
-          </ul>
-          <strong class="title-sec block">수상 내역</strong>
-          <ul class="item-list">
-            <li>
-              <div class="title-with-time-wrapper">
-                <strong>WEB 이력서 디자인 경진대회</strong>
-                <time class="time" datetime="2022-10">2022.10</time>
-              </div>
-              <p class="item-description font-light">
-                멋쟁이사자처럼 FE School, 최우수상
-              </p>
-            </li>
-            <li>
-              <div class="title-with-time-wrapper">
-                <strong>제36회 도시과학대학 공동작품전</strong>
-                <time class="time" datetime="2022-05">2022.05</time>
-              </div>
-              <p class="item-description font-light">
-                경로 기반 일정 관리 크로스플랫폼 어플리케이션
-                <a class="link link-nomargin w-fit" href="#dayplanit"
-                  >Dayplan.it</a
-                >
-              </p>
-              <p class="item-description font-light">
-                서울시립대학교, 도시과학대학장상
-              </p>
-            </li>
-            <li>
-              <div class="title-with-time-wrapper">
-                <strong>실내공간 3D 데이터 활용 아이디어 해커톤</strong>
-                <time class="time" datetime="2021-10">2021.10</time>
-              </div>
-              <p class="item-description flex flex-col font-light">
-                동국대학교, 우수상
-                <a
-                  class="link link-nomargin w-fit"
-                  href="https://www.etnews.com/20211123000099"
-                  target="_blank"
-                  >관련 기사</a
-                >
-              </p>
-            </li>
-            <!-- <li>
-              <div class="title-with-time-wrapper">
-                <strong>서울시립대학교 도시과학대학 학술제</strong>
-                <time class="time" datetime="2018-12">2018.12</time>
-              </div>
-              <p class="item-description font-light">서울시립대학교, 우수상</p>
-            </li> -->
-            <!-- 개발과 관련 없는 수상 내역은 가리기 -->
-          </ul>
-          <strong class="title-sec block print:break-before-page print:pt-5"
-            >수강 내역</strong
-          >
-          <ul class="item-list">
-            <li>
-              <div class="title-with-time-wrapper">
-                <strong>멋쟁이사자처럼 FE School 3기</strong>
-                <span class="time">
-                  <time
-                    class="after:mx-1 after:inline-block after:content-['~']"
-                    datetime="2022-08"
-                    >2022.08</time
-                  ><time class="time" datetime="2023-01">2023.01</time></span
-                >
-              </div>
-              <p class="item-description font-light">부트캠프</p>
-              <ul class="description-list description-list-small">
-                <li>
-                  회고조 조장, 팀프로젝트 팀장으로 활동하며 Soft Skill 발휘
-                </li>
-                <li>
-                  59명의 동료들에게 리액트로 투두 개발하기 특강 진행
-                  <a class="link" href="/img/지식나눔.png" target="_blank"
-                    >(스크린샷)</a
+          </article>
+          <article class="mt-7">
+            <h3 class="title-sec">자격증</h3>
+            <ul class="item-list">
+              <li>
+                <div class="title-with-time-wrapper">
+                  <strong>SQLD (국가 공인 SQL 개발자)</strong>
+                  <time class="time" datetime="2021-10">2021.10</time>
+                </div>
+                <p class="item-description font-light">한국데이터산업진흥원</p>
+              </li>
+            </ul>
+          </article>
+          <article>
+            <h3 class="title-sec">수상 내역</h3>
+            <ul class="item-list">
+              <li>
+                <div class="title-with-time-wrapper">
+                  <strong>WEB 이력서 디자인 경진대회</strong>
+                  <time class="time" datetime="2022-10">2022.10</time>
+                </div>
+                <p class="item-description font-light">
+                  멋쟁이사자처럼 FE School, 최우수상
+                </p>
+              </li>
+              <li>
+                <div class="title-with-time-wrapper">
+                  <strong>제36회 도시과학대학 공동작품전</strong>
+                  <time class="time" datetime="2022-05">2022.05</time>
+                </div>
+                <p class="item-description font-light">
+                  경로 기반 일정 관리 크로스플랫폼 어플리케이션
+                  <a class="link link-nomargin w-fit" href="#dayplanit"
+                    >Dayplan.it</a
                   >
-                </li>
-                <li>
-                  동료가 마주친 이슈를 함께 해결해나가는 "칭구칭긔들" 스터디
-                  리드<a
-                    class="link"
-                    href="https://likelion.notion.site/bde5b83036fd429395e3f3bf12731931?v=29fd6e1e5e5a4d5cbffbd1f041eef5c7"
+                </p>
+                <p class="item-description font-light">
+                  서울시립대학교, 도시과학대학장상
+                </p>
+              </li>
+              <li>
+                <div class="title-with-time-wrapper">
+                  <strong>실내공간 3D 데이터 활용 아이디어 해커톤</strong>
+                  <time class="time" datetime="2021-10">2021.10</time>
+                </div>
+                <p class="item-description flex flex-col font-light">
+                  동국대학교, 우수상
+                  <a
+                    class="link link-nomargin w-fit"
+                    href="https://www.etnews.com/20211123000099"
                     target="_blank"
-                    >(트러블슈팅 기록)</a
+                    >관련 기사</a
                   >
-                </li>
-              </ul>
-            </li>
-            <li>
-              <div class="title-with-time-wrapper">
-                <strong>AWS Cloud Practitioner Essentials</strong>
-                <time class="time" datetime="2022-08-18">2022.08.18</time>
-              </div>
-              <p class="item-description flex flex-col font-light">
-                Amazon Web Service Training and Certification
-                <a
-                  class="link link-nomargin w-fit"
-                  href="https://www.aws.training/Transcript/CompletionCertificateHtml?transcriptid=vWY0rYZwG0iJh0BjtmitCw2"
-                  target="_blank"
-                  >수료증</a
-                >
-              </p>
-            </li>
-            <li>
-              <div class="title-with-time-wrapper">
-                <strong>AWS Cloud Technical Essentials</strong>
-                <time class="time" datetime="2022-08-18">2022.08.18</time>
-              </div>
-              <p class="item-description flex flex-col font-light">
-                Amazon Web Service Training and Certification
-                <a
-                  class="link link-nomargin w-fit"
-                  href="https://www.aws.training/Transcript/CompletionCertificateHtml?transcriptid=stra_du0CUmoQfkh_lH6jw2"
-                  target="_blank"
-                  >수료증</a
-                >
-              </p>
-            </li>
-          </ul>
+                </p>
+              </li>
+              <!-- <li>
+                <div class="title-with-time-wrapper">
+                  <strong>서울시립대학교 도시과학대학 학술제</strong>
+                  <time class="time" datetime="2018-12">2018.12</time>
+                </div>
+                <p class="item-description font-light">서울시립대학교, 우수상</p>
+              </li> -->
+              <!-- 개발과 관련 없는 수상 내역은 가리기 -->
+            </ul>
+          </article>
+          <article>
+            <h3 class="title-sec print:pt-5">수강 내역</h3>
+            <ul class="item-list">
+              <li>
+                <div class="title-with-time-wrapper">
+                  <strong>멋쟁이사자처럼 FE School 3기</strong>
+                  <span class="time">
+                    <time
+                      class="after:mx-1 after:inline-block after:content-['~']"
+                      datetime="2022-08"
+                      >2022.08</time
+                    ><time class="time" datetime="2023-01">2023.01</time></span
+                  >
+                </div>
+                <p class="item-description font-light">부트캠프</p>
+                <ul class="description-list description-list-small">
+                  <li>
+                    회고조 조장, 팀프로젝트 팀장으로 활동하며 Soft Skill 발휘
+                  </li>
+                  <li>
+                    59명의 동료들에게 리액트로 투두 개발하기 특강 진행
+                    <a class="link" href="/img/지식나눔.png" target="_blank"
+                      >(스크린샷)</a
+                    >
+                  </li>
+                  <li>
+                    동료가 마주친 이슈를 함께 해결해나가는 "칭구칭긔들" 스터디
+                    리드<a
+                      class="link"
+                      href="https://likelion.notion.site/bde5b83036fd429395e3f3bf12731931?v=29fd6e1e5e5a4d5cbffbd1f041eef5c7"
+                      target="_blank"
+                      >(트러블슈팅 기록)</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <div class="title-with-time-wrapper">
+                  <strong>AWS Cloud Practitioner Essentials</strong>
+                  <time class="time" datetime="2022-08-18">2022.08.18</time>
+                </div>
+                <p class="item-description flex flex-col font-light">
+                  Amazon Web Service Training and Certification
+                  <a
+                    class="link link-nomargin w-fit"
+                    href="https://www.aws.training/Transcript/CompletionCertificateHtml?transcriptid=vWY0rYZwG0iJh0BjtmitCw2"
+                    target="_blank"
+                    >수료증</a
+                  >
+                </p>
+              </li>
+              <li>
+                <div class="title-with-time-wrapper">
+                  <strong>AWS Cloud Technical Essentials</strong>
+                  <time class="time" datetime="2022-08-18">2022.08.18</time>
+                </div>
+                <p class="item-description flex flex-col font-light">
+                  Amazon Web Service Training and Certification
+                  <a
+                    class="link link-nomargin w-fit"
+                    href="https://www.aws.training/Transcript/CompletionCertificateHtml?transcriptid=stra_du0CUmoQfkh_lH6jw2"
+                    target="_blank"
+                    >수료증</a
+                  >
+                </p>
+              </li>
+            </ul>
+          </article>
         </section>
         <section class="section-main">
           <h2 class="title-pri">학력</h2>
