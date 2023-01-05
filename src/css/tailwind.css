@@ -22,14 +22,14 @@
   }
 
   .section-main {
-    @apply mb-2 border-t border-gray p-5 print:p-2;
+    @apply mb-2 border-t border-gray p-5;
   }
 
   .section-vertical-separator {
     @apply md:relative md:ml-5 md:before:absolute md:before:left-[-10px] md:before:top-0 md:before:h-full md:before:w-[1px] md:before:bg-gray;
   }
   .title-pri {
-    @apply mt-4 mb-3 text-xl font-bold text-blue2 print:mb-1;
+    @apply mt-4 mb-3 text-xl font-bold text-blue2;
   }
   .title-sec {
     @apply text-lg font-semibold text-black;
@@ -38,14 +38,18 @@
     @apply my-1 block text-sm font-normal text-zinc-500;
   }
 
+  .stack-wrapper {
+    @apply my-7;
+  }
+
   .stack-badge {
-    @apply whitespace-nowrap rounded-full py-[1px] px-[6px] text-[12px] shadow print:px-[7px]  print:shadow-none;
+    @apply whitespace-nowrap rounded-full py-[1px] px-[6px] text-[12px] shadow;
   }
   .stack-badge-list-wrapper {
     @apply flex flex-wrap gap-3 font-mono;
   }
   .alarm-badge {
-    @apply inline-block h-4 w-4 rounded-full bg-red-400 text-center leading-4  text-white print:h-4 print:w-4 print:leading-4;
+    @apply inline-block h-4 w-4 rounded-full bg-red-400 text-center not-italic  leading-4 text-white;
   }
 
   .title-with-time-wrapper {
@@ -180,18 +184,60 @@
   }
   .point-up-emoji,
   .printer-emoji {
-    @apply flex items-center rounded-full p-3 font-medium shadow-xl backdrop-blur-sm transition-all delay-75 hover:text-smokewhite hover:backdrop-brightness-90 print:hidden;
+    @apply flex items-center rounded-full p-3 font-medium shadow-xl backdrop-blur-sm transition-all delay-75 hover:text-smokewhite hover:backdrop-brightness-90;
   }
 }
 
-@page {
-  size: A3;
-  margin: 2cm;
-}
-
 @media print {
+  @page {
+    size: A3;
+    margin: 1cm 0 0 0;
+  }
+
   .text-shadow {
     text-shadow: none;
+  }
+}
+
+@layer components {
+  .section-main:first-child {
+    @apply print:absolute print:top-8 print:right-0 print:rounded-md print:border-[1px] print:bg-white;
+  }
+
+  .section-main:not(:first-child) {
+    @apply print:p-2 print:pb-4;
+  }
+
+  .section-main:not(.project) {
+    @apply print:break-inside-avoid;
+  }
+
+  .section-main article {
+    @apply print:break-inside-avoid;
+  }
+
+  .title-pri {
+    @apply print:mb-1;
+  }
+
+  .stack-badge {
+    @apply print:px-[7px] print:shadow-none;
+  }
+
+  .alarm-badge {
+    @apply print:h-4 print:w-4 print:leading-4;
+  }
+
+  .point-up-emoji,
+  .printer-emoji {
+    @apply print:hidden;
+  }
+
+  .stack-grid {
+    @apply print:grid print:grid-cols-2 print:gap-x-3;
+  }
+  .stack-wrapper {
+    @apply print:my-3;
   }
 }
 
