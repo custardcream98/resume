@@ -168,16 +168,11 @@
   }
 
   .fixed-button {
-    @apply fixed;
+    @apply fixed bottom-8;
   }
-  .fixed-button * {
-    @apply relative block rounded-full p-3 font-medium shadow-xl backdrop-blur-sm transition-all delay-75 before:absolute before:left-[11px] before:top-[14px] before:mr-1 before:h-5 before:w-5 before:bg-contain hover:text-smokewhite hover:backdrop-brightness-90 print:hidden;
-  }
-  .fixed-button a.point-up-emoji {
-    @apply pl-8 before:bg-[url(../img/backhand-index-pointing-up-apple.png)];
-  }
-  .fixed-button button.printer-emoji {
-    @apply pl-9 before:bg-[url(../img/printer-apple.png)];
+  .point-up-emoji,
+  .printer-emoji {
+    @apply flex items-center rounded-full p-3 font-medium shadow-xl backdrop-blur-sm transition-all delay-75 hover:text-smokewhite hover:backdrop-brightness-90 print:hidden;
   }
 }
 
@@ -190,4 +185,20 @@
   .text-shadow {
     text-shadow: none;
   }
+}
+
+.fixed-button .point-up-emoji::before,
+.fixed-button .printer-emoji::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+.fixed-button .point-up-emoji::before {
+  background: url(../img/button-sprites.webp) -10px -10px;
+}
+.fixed-button .printer-emoji::before {
+  background: url(../img/button-sprites.webp) -50px -10px;
 }

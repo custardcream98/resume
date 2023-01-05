@@ -939,11 +939,13 @@ video {
 
 .fixed-button {
   position: fixed;
+  bottom: 2rem;
 }
 
-.fixed-button * {
-  position: relative;
-  display: block;
+.point-up-emoji, 
+  .printer-emoji {
+  display: flex;
+  align-items: center;
   border-radius: 9999px;
   padding: 0.75rem;
   font-weight: 500;
@@ -959,18 +961,8 @@ video {
   transition-delay: 75ms;
 }
 
-.fixed-button *::before {
-  position: absolute;
-  left: 11px;
-  top: 14px;
-  margin-right: 0.25rem;
-  height: 1.25rem;
-  width: 1.25rem;
-  content: var(--tw-content);
-  background-size: contain;
-}
-
-.fixed-button *:hover {
+.point-up-emoji:hover, 
+  .printer-emoji:hover {
   --tw-text-opacity: 1;
   color: rgb(252 253 254 / var(--tw-text-opacity));
   --tw-backdrop-brightness: brightness(.9);
@@ -979,27 +971,10 @@ video {
 }
 
 @media print {
-  .fixed-button * {
+  .point-up-emoji, 
+  .printer-emoji {
     display: none;
   }
-}
-
-.fixed-button a.point-up-emoji {
-  padding-left: 2rem;
-}
-
-.fixed-button a.point-up-emoji::before {
-  content: var(--tw-content);
-  background-image: url(../img/backhand-index-pointing-up-apple.png);
-}
-
-.fixed-button button.printer-emoji {
-  padding-left: 2.25rem;
-}
-
-.fixed-button button.printer-emoji::before {
-  content: var(--tw-content);
-  background-image: url(../img/printer-apple.png);
 }
 
 .sr-only {
@@ -1012,10 +987,6 @@ video {
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border-width: 0;
-}
-
-.bottom-8 {
-  bottom: 2rem;
 }
 
 .right-4 {
@@ -1283,6 +1254,23 @@ video {
   .text-shadow {
     text-shadow: none;
   }
+}
+
+.fixed-button .point-up-emoji::before,
+.fixed-button .printer-emoji::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+.fixed-button .point-up-emoji::before {
+  background: url(../img/button-sprites.webp) -10px -10px;
+}
+
+.fixed-button .printer-emoji::before {
+  background: url(../img/button-sprites.webp) -50px -10px;
 }
 
 .after\:mx-1::after {
