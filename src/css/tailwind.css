@@ -43,7 +43,7 @@
   }
 
   .stack-badge {
-    @apply whitespace-nowrap rounded-full py-[1px] px-[6px] text-[12px] shadow;
+    @apply whitespace-nowrap rounded-full py-[1px] px-[6px] text-[0.75rem] shadow;
   }
   .stack-badge-list-wrapper {
     @apply flex flex-wrap gap-3 font-mono;

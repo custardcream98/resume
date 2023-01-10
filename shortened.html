@@ -20,26 +20,6 @@
       content="아무리 사소한 것이라도 그냥 지나치지 않고, 항상 효율적인 워크플로우를 고민하는 주니어 프론트엔드 개발자 박시우의 이력서입니다."
     />
 
-    <!-- Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-5HKV3V68VG"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-      gtag("config", "G-5HKV3V68VG");
-    </script>
-
-    <!-- Google Search Console -->
-    <meta
-      name="google-site-verification"
-      content="bQcCT9Q1RKUKeOCuMFqP_QnhVIBS1ZKVmhtA809cK3Q"
-    />
-
     <meta
       name="keywords"
       content="프론트엔드, 개발자, 주니어, HTML, CSS, JavaScript, TypeScript"
@@ -51,6 +31,41 @@
 
     <link href="css/tailwind.css" rel="stylesheet" />
     <link href="css/print-background.css" rel="stylesheet" />
+    <style>
+      @page {
+        margin: 1cm;
+      }
+      :root {
+        font-size: 12px;
+      }
+
+      .contact::after {
+        height: 12px;
+        width: 1px;
+      }
+
+      .link-separator::after {
+        top: 3px;
+        right: -7px;
+        height: 12px;
+      }
+      .link-github::before {
+        width: 13px;
+        height: 13px;
+        top: 2px;
+        left: -14px;
+      }
+
+      @media print {
+        .section-main:first-child {
+          top: 10px;
+        }
+
+        .stack-grid {
+          column-gap: 30px;
+        }
+      }
+    </style>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -67,9 +82,9 @@
     <div
       class="m-auto mb-[50px] max-w-3xl text-textgray print:relative print:mb-0 print:max-w-[90%] content:mb-0"
     >
-      <header class="mb-5 flex items-center p-5 print:mb-2">
+      <header class="mb-5 flex items-center p-3 print:mb-2">
         <img
-          class="md:order-2 md:ml-5 md:h-[180px] md:w-[180px] print:md:h-[130px] print:md:w-[130px] h-[130px] w-[130px] rounded-full shadow-lg print:shadow-none"
+          class="md:order-2 md:ml-5 md:h-[180px] md:w-[180px] print:md:h-[130px] print:md:w-[100px] h-[100px] w-[100px] rounded-full shadow-lg print:shadow-none"
           src="./img/profile.webp"
           alt="프로필 사진"
         />
@@ -81,9 +96,8 @@
           </p>
           <h1 class="md:text-end font-black">
             <span
-              class="md:mt-2 md:mb-2 md:text-3xl print:md:ml-auto print:md:block print:md:w-fit print:md:text-xl my-1 inline-block w-fit bg-gradient-to-r from-blue1 to-blue4 bg-clip-text text-xl text-transparent print:text-blue1"
-              ><span class="md:inline block">주니어 </span>프론트엔드
-              개발자</span
+              class="md:mt-2 md:mb-2 md:text-3xl print:md:ml-auto print:md:block print:md:w-fit my-1 inline-block w-fit bg-gradient-to-r from-blue1 to-blue4 bg-clip-text text-xl text-transparent print:text-blue1"
+              >프론트엔드 개발자</span
             >
             <span
               class="md:inline-block md:py-2 md:text-4xl print:md:py-1 print:md:px-1 print:md:text-2xl block w-fit bg-gradient-to-r from-blue1 to-blue4 py-1 px-2 text-2xl text-smokewhite"
@@ -137,15 +151,6 @@
               생성하는 node script를 작성해 npm 명령어만으로 간단하게 해결할 수
               있도록 했으며, 블로그의 썸네일을 자동으로 생성하는 API를 개발하는
               등 반복적인 작업을 최소화하는 것을 좋아합니다.
-            </p>
-            <p class="mt-4">
-              더 좋은
-              <strong class="text-blue1">커뮤니케이션 방법, 협력 방법</strong>을
-              항상 고민합니다.<br />
-              졸업작품시 Git-flow 기반의 협업을 제안해 적용하고, 멋쟁이사자처럼
-              프론트엔드 스쿨의 회고조 조장, 스터디 장, 팀 프로젝트 팀장으로
-              활동하며 칭칭이(도움이 필요한 동료를 적극적으로 서포트하는 활동)
-              스터디, 팀 프로젝트 등을 이끈 바 있습니다.
             </p>
           </div>
         </section>
@@ -220,9 +225,6 @@
                 <li class="stack-badge stack-illustrator">Adobe Illustrator</li>
                 <li class="stack-badge stack-git">Git/Github</li>
                 <li class="stack-badge stack-python">Python</li>
-                <!-- <li class="stack-badge stack-discord">Discord</li>
-                  <li class="stack-badge stack-gather">Gather</li>
-                    -->
               </ul>
             </div>
           </div>
@@ -312,57 +314,6 @@
                     Git-flow 활용, issue, commit message, PR 컨벤션 확립 등의
                     방법으로 협업 효율화
                   </li>
-                </ul>
-              </li>
-            </ul>
-          </article>
-          <article class="my-7">
-            <header class="title-with-time-wrapper">
-              <h3 class="title-sec mb-1">Share it! <em>개인 프로젝트</em></h3>
-              <time class="time" datetime="2022-11">2022.11</time>
-            </header>
-            <p class="mb-1 text-[0.95rem]">
-              <a
-                class="link link-github link-separator"
-                href="https://github.com/custardcream98/share-it"
-                target="_blank"
-                >Github</a
-              ><a
-                class="link"
-                href="https://share-it-rust.vercel.app/"
-                target="_blank"
-                >서비스 링크</a
-              >
-            </p>
-            <p class="item-description">
-              코드를 서로 나눌 수 있도록 마크다운 입력이 가능한 커뮤니티입니다.
-            </p>
-            <strong class="sr-only">사용한 스택</strong>
-            <ul class="stack-badge-list-wrapper my-2">
-              <li class="stack-badge stack-react">React.js</li>
-              <li class="stack-badge stack-ts">TypeScript</li>
-              <li class="stack-badge stack-styledcomponents">
-                styled-components
-              </li>
-              <li class="stack-badge stack-node">Node.js</li>
-              <li class="stack-badge stack-firebase">Firebase</li>
-            </ul>
-            <strong class="sr-only">성과</strong>
-            <ul class="description-list">
-              <li>
-                <code class="code-box">node-mailer</code> 모듈을 활용해 댓글이
-                달릴 경우 글 작성자에게 메일을 보내는 API 개발
-              </li>
-              <li>
-                Code Splitting, 서브셋 폰트 등을 활용해 성능 최적화
-                <a
-                  class="link"
-                  href="https://custardcream.vercel.app/posts/%EA%B0%9C%EC%9D%B8%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%20Share%20it!%EC%9D%98%20%EC%84%B1%EB%8A%A5%20%EC%B5%9C%EC%A0%81%ED%99%94%ED%95%98%EA%B8%B0"
-                  target="_blank"
-                  >(관련 포스트)</a
-                >
-                <ul>
-                  <li>Lighthouse 기준 성능 점수 82점에서 91점으로 향상</li>
                 </ul>
               </li>
             </ul>
@@ -502,49 +453,6 @@
               <li>Backend 엔드포인트 명세 설계</li>
             </ul>
           </article>
-          <article class="my-7">
-            <header class="title-with-time-wrapper">
-              <h3 class="title-sec mb-1">
-                금연 타이머 Smoquit <em>개인 프로젝트</em>
-              </h3>
-              <time class="time" datetime="2022-07">2022.07</time>
-            </header>
-            <p class="mb-1 text-[0.95rem]">
-              <a
-                class="link link-github link-separator"
-                href="https://github.com/custardcream98/smoquit"
-                target="_blank"
-                >Github</a
-              ><a
-                class="link"
-                href="https://custardcream98.github.io/smoquit/"
-                target="_blank"
-                >서비스 링크</a
-              >
-            </p>
-            <p class="item-description">
-              금연을 도전하는 사람들에게 담배를 끊어 얻게된 이득을 실시간으로
-              보여줘 금연에 대한 동기를 부여해주는 Web App입니다.
-            </p>
-            <strong class="sr-only">사용한 스택</strong>
-            <ul class="stack-badge-list-wrapper my-2">
-              <li class="stack-badge stack-react">React.js</li>
-              <li class="stack-badge stack-redux">Redux</li>
-              <li class="stack-badge stack-bootstrap">Bootstrap</li>
-              <li class="stack-badge stack-firebase">Firebase</li>
-            </ul>
-            <strong class="sr-only">성과</strong>
-            <ul class="description-list">
-              <li>
-                <code class="code-box">React.lazy()</code> 활용해 레이지 로딩
-                구현
-              </li>
-              <li>
-                <code class="code-box">React.Suspense</code> 활용해 loading
-                indicator 구현
-              </li>
-            </ul>
-          </article>
           <article id="dayplanit" class="my-7">
             <header class="title-with-time-wrapper">
               <h3 class="title-sec mb-1">
@@ -569,7 +477,8 @@
               >
             </p>
             <p class="item-description">
-              경로 기반 일정 관리 크로스플랫폼 어플리케이션입니다.
+              도시과학대학장상을 수상한 경로 기반 일정 관리 크로스플랫폼
+              어플리케이션입니다.
             </p>
             <strong class="sr-only">사용한 스택</strong>
             <ul class="stack-badge-list-wrapper my-2">
@@ -580,7 +489,6 @@
             </ul>
             <strong class="sr-only">성과</strong>
             <ul class="description-list">
-              <li>도시과학대학장상 수상</li>
               <li>
                 순서와 경로가 담긴 스케줄 데이터를 효율적으로 다루기 위해
                 Frontend / Backend 양측에서 Serializer, Deserializer 개발
@@ -666,43 +574,6 @@
               </li>
             </ul>
           </article>
-          <article id="inchon" class="my-7">
-            <header class="title-with-time-wrapper">
-              <h3 class="title-sec mb-1">
-                인천시 생활폐기물 발생량 분석 및 예측 모델 개발
-                <em
-                  >4인 팀프로젝트 - 서울시립대학교 공간 데이터베이스 연구실
-                  연구과제</em
-                >
-              </h3>
-              <span class="time">
-                <time class="time-ongoing" datetime="2021-06">2021.06</time
-                ><time datetime="2021-12">2021.12</time></span
-              >
-            </header>
-            <p class="item-description">
-              인천시 각 구에서 수집하는 생활폐기물 수거 기록과 카드 사용 데이터,
-              택배 데이터, 통신사 유동인구 데이터 등을 활용해 생활폐기물
-              발생량을 분석했습니다.
-            </p>
-            <strong class="sr-only">사용한 스택</strong>
-            <ul class="stack-badge-list-wrapper my-2">
-              <li class="stack-badge stack-python">Python</li>
-              <li class="stack-badge stack-postgres">PostgreSQL</li>
-            </ul>
-            <strong class="sr-only">성과</strong>
-            <ul class="description-list">
-              <li>
-                인천시 내의 각 구에서 보내주는 Raw Data의 형식에 일관성이 없고
-                품질이 매우 낮아 Python과 C# ASP.NET 등으로 자동화 프로그램
-                개발, 200GB의 텍스트 및 공간 데이터 수집
-              </li>
-              <li>PostgreSQL을 활용해 분석용 데이터를 DB화</li>
-              <li>
-                GIS, Python 등을 이용해 데이터를 시각화하고 데이터의 특성을 파악
-              </li>
-            </ul>
-          </article>
         </section>
         <section class="section-main">
           <h2 class="title-pri">활동</h2>
@@ -747,22 +618,6 @@
               <time class="time time-ongoing" datetime="2022-03">2022.03</time>
             </header>
             <p class="item-description">Core Member</p>
-            <strong class="mt-3 mb-1 block">맡은 역할</strong>
-            <ul class="description-list">
-              <li>Frontend Team Core Member (22.09 ~)</li>
-              <li>Data/ML Team Core Member (22.03 ~ 22.09)</li>
-            </ul>
-            <strong class="mt-3 mb-1 block">경험 내용</strong>
-            <ul class="description-list">
-              <li>
-                신입 멤버 선정을 위해 받은 자기소개서를 효율적으로 찾아볼 수
-                있는 Web Page를 Next.js 이용해 개발
-              </li>
-              <li>
-                Confluence, Slack, Gather 등의 커뮤니케이션 툴을 활용해 Daily
-                Scrum, Sprint 회고, Kick Off, CPU Meeting 등을 주도
-              </li>
-            </ul>
           </article>
           <article class="my-7">
             <header class="title-with-time-wrapper">
@@ -772,28 +627,9 @@
             <p class="item-description">
               서울시립대학교 공간 데이터베이스 연구실
             </p>
-            <strong class="mt-3 mb-1 block">업무</strong>
-            <ul class="description-list">
-              <li>Web Developer</li>
-              <li>데이터 정제, 관리, 수집, 분석 및 가공</li>
-              <li>공간 데이터베이스 설계 및 구축</li>
-            </ul>
-            <strong class="mt-3 mb-1 block">진행한 프로젝트</strong>
-            <ul class="description-list">
-              <li>
-                <a class="link link-nomargin" href="#inchon"
-                  >인천시 생활폐기물 발생량 분석 및 예측 모델 개발 연구</a
-                >
-              </li>
-              <li>
-                <a class="link link-nomargin" href="#good-rider"
-                  >착한 이륜차 운전자 평가 시스템 개발 연구</a
-                >
-              </li>
-            </ul>
           </article>
         </section>
-        <section class="section-main print:border-t-0">
+        <section class="section-main">
           <h2 class="title-pri">기타</h2>
           <article class="mt-7">
             <h3 class="title-sec">자격증</h3>
@@ -843,29 +679,6 @@
                   서울시립대학교, 도시과학대학장상
                 </p>
               </li>
-              <li>
-                <div class="title-with-time-wrapper">
-                  <strong>실내공간 3D 데이터 활용 아이디어 해커톤</strong>
-                  <time class="time" datetime="2021-10">2021.10</time>
-                </div>
-                <p class="item-description flex flex-col font-light">
-                  동국대학교, 우수상
-                  <a
-                    class="link link-nomargin w-fit"
-                    href="https://www.etnews.com/20211123000099"
-                    target="_blank"
-                    >관련 기사</a
-                  >
-                </p>
-              </li>
-              <!-- <li>
-                <div class="title-with-time-wrapper">
-                  <strong>서울시립대학교 도시과학대학 학술제</strong>
-                  <time class="time" datetime="2018-12">2018.12</time>
-                </div>
-                <p class="item-description font-light">서울시립대학교, 우수상</p>
-              </li> -->
-              <!-- 개발과 관련 없는 수상 내역은 가리기 -->
             </ul>
           </article>
           <article>
@@ -936,17 +749,6 @@
               </li>
             </ul>
           </article>
-        </section>
-        <section class="section-main">
-          <h2 class="title-pri">학력</h2>
-          <div class="title-with-time-wrapper mt-7">
-            <strong class="title-sec mb-1">서울시립대학교</strong>
-            <span class="time">
-              <time class="time-ongoing" datetime="2017-03">2017.03</time
-              ><time class="time" datetime="2023-07">2023.07 (예정)</time></span
-            >
-          </div>
-          <p class="item-description font-light">공간정보공학과</p>
         </section>
       </main>
     </div>

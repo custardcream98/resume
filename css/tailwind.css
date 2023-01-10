@@ -633,7 +633,7 @@ video {
   padding-bottom: 1px;
   padding-left: 6px;
   padding-right: 6px;
-  font-size: 12px;
+  font-size: 0.75rem;
   --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
@@ -1092,24 +1092,16 @@ video {
   margin-bottom: 0.25rem;
 }
 
+.ml-\[-8px\] {
+  margin-left: -8px;
+}
+
 .mt-3 {
   margin-top: 0.75rem;
 }
 
 .mt-7 {
   margin-top: 1.75rem;
-}
-
-.mr-1 {
-  margin-right: 0.25rem;
-}
-
-.ml-\[-5px\] {
-  margin-left: -5px;
-}
-
-.ml-\[-8px\] {
-  margin-left: -8px;
 }
 
 .block {
@@ -1128,6 +1120,10 @@ video {
   height: 130px;
 }
 
+.h-\[100px\] {
+  height: 100px;
+}
+
 .w-\[130px\] {
   width: 130px;
 }
@@ -1136,6 +1132,10 @@ video {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+}
+
+.w-\[100px\] {
+  width: 100px;
 }
 
 .max-w-3xl {
@@ -1210,6 +1210,10 @@ video {
 
 .p-5 {
   padding: 1.25rem;
+}
+
+.p-3 {
+  padding: 0.75rem;
 }
 
 .py-8 {
@@ -1344,13 +1348,13 @@ video {
   display: inline-block;
 }
 
-.after\:content-\[\'\~\'\]::after {
-  --tw-content: '~';
+.after\:content-\[\'\300F\'\]::after {
+  --tw-content: '』';
   content: var(--tw-content);
 }
 
-.after\:content-\[\'\300F\'\]::after {
-  --tw-content: '』';
+.after\:content-\[\'\~\'\]::after {
+  --tw-content: '~';
   content: var(--tw-content);
 }
 
