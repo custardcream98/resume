@@ -127,6 +127,9 @@
   .stack-flutter {
     @apply bg-[#042B5940] text-[#042B59];
   }
+  .stack-cypress {
+    @apply bg-[#c36a8e40] text-[#c36a8e];
+  }
   .stack-html {
     @apply bg-[#e34c2640] text-[#e34c26];
   }

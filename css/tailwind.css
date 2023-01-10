@@ -822,6 +822,12 @@ video {
   color: rgb(4 43 89 / var(--tw-text-opacity));
 }
 
+.stack-cypress {
+  background-color: #c36a8e40;
+  --tw-text-opacity: 1;
+  color: rgb(195 106 142 / var(--tw-text-opacity));
+}
+
 .stack-html {
   background-color: #e34c2640;
   --tw-text-opacity: 1;
@@ -1341,18 +1347,6 @@ video {
 
   .print\:max-w-\[90\%\] {
     max-width: 90%;
-  }
-
-  .print\:border-0 {
-    border-width: 0px;
-  }
-
-  .print\:\!border-0 {
-    border-width: 0px !important;
-  }
-
-  .print\:\!border-t-0 {
-    border-top-width: 0px !important;
   }
 
   .print\:border-t-0 {
