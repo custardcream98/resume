@@ -2,18 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components {
+@layer base {
   * {
     word-break: inherit;
   }
   :root {
     word-break: keep-all;
   }
+}
 
+@layer utilities {
   .text-shadow {
     text-shadow: 5px 5px 11px rgba(0, 0, 0, 0.25);
   }
+}
 
+@layer components {
   .contact {
     @apply inline-block after:relative after:top-[2px] after:mx-2 after:inline-block after:h-[15px] after:w-[2px] after:bg-darkgray;
   }
@@ -191,18 +195,18 @@
   }
 }
 
-@media print {
-  @page {
-    size: A3;
-    margin: 1cm 0 0 0;
+@layer print {
+  @media print {
+    @page {
+      size: A3;
+      margin: 1cm 0 0 0;
+    }
+
+    .text-shadow {
+      text-shadow: none;
+    }
   }
 
-  .text-shadow {
-    text-shadow: none;
-  }
-}
-
-@layer components {
   .section-main:first-child {
     @apply print:absolute print:top-8 print:right-0 print:rounded-md print:border-[1px] print:bg-white;
   }
