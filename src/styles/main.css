@@ -119,6 +119,9 @@
   .stack-react {
     @apply bg-[#61DBFB40];
   }
+  .stack-vue {
+    @apply bg-[#3fb37f40];
+  }
   .stack-redux {
     @apply bg-[#764abc40] text-[#764abc];
   }

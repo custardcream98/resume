@@ -756,6 +756,10 @@ video {
   background-color: #61DBFB40;
 }
 
+.stack-vue {
+  background-color: #3fb37f40;
+}
+
 .stack-redux {
   background-color: #764abc40;
   --tw-text-opacity: 1;
